@@ -17,13 +17,13 @@
 \RequirePackage{fancyvrb}
 \RequirePackage{hologo}
 \RequirePackage{enumerate}
+\RequirePackage{pdfpages}
 % \RequirePackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \RequirePackage[a4paper,centering,scale=0.75,marginparwidth=2cm]{geometry}
 \RequirePackage{url}
 % \RequirePackage[UTF8]{ctex}
 \RequirePackage{graphicx}
 \RequirePackage{subfigure} 
-
 \RequirePackage{appendix}
 \RequirePackage{float}
 \RequirePackage[bookmarksnumbered,bookmarksopen,colorlinks,linkcolor=red,anchorcolor=black,citecolor=blue,urlcolor=blue]{hyperref}
@@ -51,6 +51,10 @@
 \let\oldmarginpar\marginpar
 \renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
 {\raggedright\footnotesize #1}}
+
+% \usepackage[style=gb7714-2015,url=false,doi=false]{biblatex}
+\RequirePackage[style=gb7714-2015,url=false,doi=false]{biblatex}
+\addbibresource{references.bib}
 
 % \makeatletter
 % \@namedef{subjclassname@2020}{\textup{\kaishu{MR (2020) 主题分类}}}
