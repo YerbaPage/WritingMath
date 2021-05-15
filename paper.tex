@@ -1,4 +1,7 @@
 \documentclass{formatBook}
+\usepackage[style=gb7714-2015,url=false,doi=false]{biblatex}
+\addbibresource{references.bib}
+
 \begin{document}
 \title{数学学术论文写作}
 \author{东林 \quad 石雨凌}
@@ -247,7 +250,7 @@ the temptation of writing the easiest or most straightforward portions first. \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figure/graph.png}
-    \caption{文献~\cite{gessel2005miki}与其他文献间的引用关系图}
+    \caption{文献~\cite{gessel_mikis_2005}与其他文献间的引用关系图}
     \label{fig:mikiGrapg}
 \end{figure}
 
@@ -365,7 +368,8 @@ the temptation of writing the easiest or most straightforward portions first. \\
 % 
 % 模板
 \chapter{后记}\mnote{感谢老师, 可以加一些关于修改的体会(多修改 多交流)}
-撰写和发表学术论文不是一件容易的事，如果你的论文被拒绝了，也许只是你这匹千里马没有遇到属于自己的伯乐，毕竟千里马常有，而伯乐不常有。在学术研究中形成自己的想法并与他人分享，是学术生活中最有意义的事之一。论文的发表、讨论往往会带来新的见解和新的合作，充分抓住这个机会。
-\bibliographystyle{abbrv}
-\bibliography{./paper}
+撰写和发表学术论文不是一件容易的事，如果你的论文被拒绝了，也许只是你这匹千里马没有遇到属于自己的伯乐，毕竟千里马常有，而伯乐不常有。在学术研究中形成自己的想法并与他人分享，是学术生活中最有意义的事之一。论文的发表、讨论往往会带来新的见解和新的合作，充分抓住\cite{huang_morleywangxu_2021}这个机会。
+
+
+\printbibliography
 \end{document}
