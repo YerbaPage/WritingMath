@@ -54,7 +54,7 @@
 
 % \usepackage[style=gb7714-2015,url=false,doi=false]{biblatex}
 \RequirePackage[style=gb7714-2015,url=false,doi=false]{biblatex}
-\addbibresource{references.bib}
+% \addbibresource{references.bib}
 
 % \makeatletter
 % \@namedef{subjclassname@2020}{\textup{\kaishu{MR (2020) 主题分类}}}
