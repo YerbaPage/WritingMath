@@ -21,7 +21,6 @@
 
     - 相关文献查找与获取
     - Overleaf
-    - Zotero 
 
 
 
