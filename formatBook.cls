@@ -53,7 +53,8 @@
 {\raggedright\footnotesize #1}}
 
 % \usepackage[style=gb7714-2015,url=false,doi=false]{biblatex}
-\RequirePackage[style=gb7714-2015,url=false,doi=false]{biblatex}
+% \RequirePackage[style=gb7714-2015,url=false,doi=false]{biblatex}
+\RequirePackage[style=trad-abbrv,url=false,doi=false]{biblatex}
 % \addbibresource{references.bib}
 
 % \makeatletter

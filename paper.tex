@@ -1,4 +1,5 @@
 \documentclass{formatBook}
+\newcommand{\XG}[1]{\textcolor{red}{#1}}
 \addbibresource{references.bib}
 \begin{document}
 \title{数学学术论文写作}
@@ -8,11 +9,11 @@
 \setlength{\parskip}{1.5em}
 \newpage
 \chapter{引言}
-在大学阶段, 作为数学专业的学生, 我们不可避免会进行一系列的数学学术论文的写作, 可能是为了完成课程论文、毕业论文, 也可能是跟随导师进行课外的学术研究. 笔者自身也只是大学本科生, 没有太多学术写作的经验. 为了写这本书(甚至只能说是一本小的指导手册), 笔者也阅读了许多教授、数学家关于数学学术论文写作指导的书籍、文章, 从中挑选整理了一些观点并结合了自身的写作经历, 提出一些大学阶段数学学术论文写作规范性的小建议, 并且介绍一些获取论文写作资料的方法和协作工具. 大学阶段的论文写作最重要的还是注意规范性, 所以有不少框架需要遵循.
+在大学阶段, 作为数学专业的学生, 我们不可避免会进行一系列的数学学术论文的写作, 可能是为了完成课程论文, 毕业论文, 也可能是跟随导师进行课外的学术研究. 笔者自身也只是大学本科生, 没有太多学术写作的经验. 为了写这本书(甚至只能说是一本小的指导手册), 笔者也阅读了许多教授, 数学家关于数学学术论文写作指导的书籍, 文章, 从中挑选整理了一些观点并结合了自身的写作经历, \XG{按照写作前, 写作中以及写作后的顺序, }提出一些大学阶段数学学术论文写作的小建议, 并且在之后介绍一些获取论文写作资料的方法和协作工具, 最后附上笔者编写的 Overleaf 注册与使用指南供大家随时查阅.
+%大学阶段的论文写作最重要的还是注意规范性, 所以有不少框架需要遵循.
+% 当我们成为知名教授甚至是数学家时, 也许就能形成属于自己的写作风格. (她之前说这句我们先不用放着)
 
-% 当我们成为知名教授甚至是数学家时, 也许就能形成属于自己的写作风格. 
-
-\par 在开始阅读这本书之前, 希望我们能够清楚学术论文写作的目的. 一个人如果能完全意识到自己撰写学术论文的目的, 那么论文的质量将大大改善. 撰写学术论文最根本的目的是传达自己的想法. 从古至今, 社会的进步和科学的发展都是人类思想交流后的产物. 把学术论文写作看成是一种思想的交流后, 我们就会理解笔者写这本书的更深的用意是希望大家能够做到尊重读者、尊重其他作者、学会自我思考判断以及学会与他人进行有效的合作. 
+\par 在开始阅读这本书之前, 希望我们能够清楚学术论文写作的目的. 一个人如果能完全意识到自己撰写学术论文的目的, 那么论文的质量将大大改善. 撰写学术论文最根本的目的是传达自己的想法. 从古至今, 社会的进步和科学的发展都是人类思想交流后的产物. 把学术论文写作看成是一种思想的交流后, 我们就会理解笔者写这本书的更深的用意是希望大家能够做到尊重读者, 尊重其他作者, 学会自我思考判断以及学会与他人进行有效的合作.
 
 \chapter{论文写作}
 \section{写作前: 构建雏形}
@@ -25,17 +26,17 @@
 
 我们在完成课程论文或者毕业论文的过程中经常会遇到如下情况: 在拿到一个课题后, 思考论文从何处下手时, 对于某一部分如何写作有了灵感亦或者是觉得某一部分最容易写, 便马上将这一部分完成. 但是在进行其余部分的写作时, 却发现自己最先完成的部分无法很好得融入论文整体, 而不得不进行大规模修改甚至是重写. \par
 出现这一情况的原因, 很可能是我们并没有在开始写作前对我们的论文有一个整体的雏形, 并没有梳理清楚每一部分之间的逻辑关系以及大致应该包含的内容. 陶哲轩提出的构建雏形法, 将有助于我们避免上述的问题并且可以培养论文写作时的整体意识以及逻辑思维. \par
-在使用构建雏形法进行论文写作前, \textbf{我们必须清楚得了解我们手头有哪些可以使用的材料以及为了完成我们的论文我们还缺什么.} 我们手头现有的材料可能包括导师给我们的几篇参考论文以及研究的方向, 我们缺少的可能是支撑我们论文的关键定理以及相关数据. 事实上, 大部分同学进行学术写作都需要阅读大量与课题相关的论文以及书籍, 然后从中找到适合自己论文的内容, 以自己的理解进行修改整合. 当我们构建完雏形后, 我们可以利用这些我们现有的以及自己挖掘整合的材料对我们构建的雏形进行“填空”. \par
+在使用构建雏形法进行论文写作前, \textbf{我们必须清楚得了解我们手头有哪些可以使用的材料以及为了完成我们的论文我们还缺什么.} 我们手头现有的材料可能包括导师给我们的几篇参考论文以及研究的方向, 我们缺少的可能是支撑我们论文的关键定理以及相关数据. 事实上, 大部分同学进行学术写作都需要阅读大量与课题相关的论文以及书籍, 然后从中找到适合自己论文的内容, 以自己的理解进行修改整合. 当我们构建完雏形后, 我们可以利用这些我们现有的以及自己挖掘整合的材料对我们构建的雏形进行\XG{``}填空''. \par
 \textbf{下面我们将向大家介绍构建雏形法的具体步骤: }
 \begin{enumerate}
-    \item \textbf{写出论文的大体框架}, 这个框架包括论文中需要用到的 所有关键的引理、命题、定理以及定义, 但是不需要我们进行完整严格的证明. 
-    \item \textbf{针对第一步中列出的引理、命题、定理以及定义, 尽自己所能(可以是自己思考, 也可以是借鉴他人)进行完整严格的证明或是叙述. }进行必要的检查, 确保所有引理、命题、定理以及定义的证明叙述准确无误. 
-    \item \textbf{梳理引理、命题、定理以及定义直接的逻辑关系}. 本科阶段我们可能很难通过毕业论文对某一问题做出极其突出的研究贡献来使自己的论文得到导师的青睐欣赏, 但是当我们就某一问题有条理地、逻辑严谨地进行论述, 一样可以使导师对我们的毕业论文赞赏有加. 
-    \item \textbf{对论文的其他“常规”部分进行写作}, 包括摘要、引言以及段落之间的衔接部分等. 
+    \item \textbf{写出论文的大体框架}, 这个框架包括论文中需要用到的 所有关键的引理, 命题, 定理以及定义, 但是不需要我们进行完整严格的证明.
+    \item \textbf{针对第一步中列出的引理, 命题, 定理以及定义, 尽自己所能(可以是自己思考, 也可以是借鉴他人)进行完整严格的证明或是叙述. }进行必要的检查, 确保所有引理, 命题, 定理以及定义的证明叙述准确无误.
+    \item \textbf{梳理引理, 命题, 定理以及定义直接的逻辑关系}. 本科阶段我们可能很难通过毕业论文对某一问题做出极其突出的研究贡献来使自己的论文得到导师的青睐欣赏, 但是当我们就某一问题有条理地, 逻辑严谨地进行论述, 一样可以使导师对我们的毕业论文赞赏有加.
+    \item \textbf{对论文的其他\XG{``}常规''部分进行写作}, 包括摘要, 引言以及段落之间的衔接部分等.
 \end{enumerate}
 \par
-这种方法很适合合作写作, 例如: 一位同学可以列出论文中需要用到的所有定义、命题以及定理, 并梳理逻辑关系, 然后另一位同学可以填写证明的细节, 进行符号、格式的统一. 笔者在撰写本文时也用到构建雏形法, 同时借助overleaf平台, 进行类似的合作写作, 写作效率得到了明显的提升, 之后我们也会向大家介绍overleaf平台. \par
-\textbf{在实际写作过程中, 大家应该根据具体情况灵活运用构建雏形法. }笔者在写作课程论文时, 经常会遇到这种情况: 当我在写论文的某一部分时, 常常灵光一闪, 想到一些关于如何处理另一部分论文的好主意, 例如证明完某一个定理后, 可能会想到一个很好的例子去验证这一定理. 当发生这种情况时, 我们不建议大家忽略该想法, 也不建议放弃当前正在做的事情去落实这一想法. 相反, 大家可以在构建的雏形的相关位置对该想法进行标记, 然后我们可以暂时忘记该想法并继续之前的工作, 这样可以避免破坏我们的注意力或动力, 并且我们可以在写作过程中更合适的阶段重新考虑我们的想法. 
+这种方法很适合合作写作, 例如: 一位同学可以列出论文中需要用到的所有定义, 命题以及定理, 并梳理逻辑关系, 然后另一位同学可以填写证明的细节, 进行符号, 格式的统一. 笔者在撰写本文时也用到构建雏形法, 同时借助overleaf平台, 进行类似的合作写作, 写作效率得到了明显的提升, 之后我们也会向大家介绍overleaf平台. \par
+\textbf{在实际写作过程中, 大家应该根据具体情况灵活运用构建雏形法. }笔者在写作课程论文时, 经常会遇到这种情况: 当我在写论文的某一部分时, 常常灵光一闪, 想到一些关于如何处理另一部分论文的好主意, 例如证明完某一个定理后, 可能会想到一个很好的例子去验证这一定理. 当发生这种情况时, 我们不建议大家忽略该想法, 也不建议放弃当前正在做的事情去落实这一想法. 相反, 大家可以在构建的雏形的相关位置对该想法进行标记, 然后我们可以暂时忘记该想法并继续之前的工作, 这样可以避免破坏我们的注意力或动力, 并且我们可以在写作过程中更合适的阶段重新考虑我们的想法.
 
 \section{写作中: 如何写好论文}
 \noindent \textit{作为 Advances in Mathematics 杂志的编辑, 我经常将提交的论文发回给作者, 并建议他们加长引言部分. 有一次, 我以回邮方式收到了作者的来信, 说那篇论文刚被 Annals of Mathematics 以引言太长为由拒绝. }
@@ -44,12 +45,12 @@
 \end{flushright}
 
 正如 Rota 所描述的那样, \textbf{笔者认为所有论文都不应该遵循一种格式, 相反, 写作过程中的关键一点是灵活性}: 即根据我们所要写论文, 选择合适的格式.
-当然在某些情况下, 灵活性与规范性会发生冲突, 笔者的建议是在完成课程论文或者毕业论文时, 应该将规范性放在第一位，严格遵守老师的要求, 当我们在课余时间自己做研究写论文时, 可以根据实际情况进行选择.
-做出正确的选择往往需要大家运用自己的判断力, 而提升判断力没有什么捷径可走, 当我们写了许多篇学术论文, 积累了大量实践经验后, 自然而然就能形成自己的判断. 
+当然在某些情况下, 灵活性与规范性会发生冲突, 笔者的建议是在完成课程论文或者毕业论文时, 应该将规范性放在第一位\XG{,} 严格遵守老师的要求, 当我们在课余时间自己做研究写论文时, 可以根据实际情况进行选择.
+做出正确的选择往往需要大家运用自己的判断力, 而提升判断力没有什么捷径可走, 当我们写了许多篇学术论文, 积累了大量实践经验后, 自然而然就能形成自己的判断.
 \textbf{事实上, 不管注重灵活性还是规范性, 大家学术写作最重要的是做到表达清晰, 将自己的研究成果与个人想法清晰地传达给读者.} 这一点, 笔者也会在后文进行叙述.
-由于笔者自身仍然缺乏足够的实践经验, 因此我们决定在这一部分就论文的写作规范给大家一些常用的小建议, 当然这些建议不是必须执行的, 仅在大多数情况下有用. 希望大家能觉得这些建议有价值, 对我们的学术写作有帮助. 
+由于笔者自身仍然缺乏足够的实践经验, 因此我们决定在这一部分就论文的写作规范给大家一些常用的小建议, 当然这些建议不是必须执行的, 仅在大多数情况下有用. 希望大家能觉得这些建议有价值, 对我们的学术写作有帮助.
 \subsection{关于论文}
-通常情况下, \textbf{一篇完整的学术论文由如下部分组成}: 
+通常情况下, \textbf{一篇完整的学术论文由如下部分组成}:
 \begin{itemize}
     \item 标题 (Title)
     \item 作者 (List of authors)
@@ -62,49 +63,49 @@
     \item 附录* (Appendix)
 \end{itemize}
 \par
-笔者将针对这些部分给出相关建议. 
+笔者将针对这些部分给出相关建议.
 \subsection{整体建议}
 \subsubsection{标题}
-一个好的标题往往能激发读者的阅读兴趣, 而大家进行学术写作自然是希望自己的论文能被广泛地阅读, 所以千万不要小看可能只有十几个字的论文标题. 事实上, 很多同学在论文写作时往往都是最后随便取一个标题的, 这是非常不好的习惯. \textbf{以下是笔者认为取标题时应该注意的事项}(例子摘选自\cite{JungelHow}): 
+一个好的标题往往能激发读者的阅读兴趣, 而大家进行学术写作自然是希望自己的论文能被广泛地阅读, 所以千万不要小看可能只有十几个字的论文标题. 事实上, 很多同学在论文写作时往往都是最后随便取一个标题的, 这是非常不好的习惯. \textbf{以下是笔者认为取标题时应该注意的事项}(例子摘选自\cite{JungelHow}):
 \begin{itemize}
-    \item 应尽可能提供丰富的信息, 但不要太繁琐或太长. 下面这个标题就显得冗长, 包含的要素过多, 让读者失去了阅读兴趣\\
+    \item 应尽可能提供丰富的信息, 但不要太繁琐或太长. 下面这个标题就显得冗长, 包含的要素过多, 让读者失去了阅读兴趣\XG{.}\\
           \textit{A Decomposition of Compact Continua and Related Results on Fixed Sets under Continuous Mappings \\ \ \ \  (连续映射下固定集上紧连续性和相关结果的分解)}
-    \item 可以使用一些精炼的关键词, 但不能太笼统. 下面这个标题只告诉读者这篇文章研究的是一个物理学的问题, 但是并不能让读者知晓具体的研究领域, 这会打消那些带着较强目的性查找文献的读者阅读兴趣\\
+    \item 可以使用一些精炼的关键词, 但不能太笼统. 下面这个标题只告诉读者这篇文章研究的是一个物理学的问题, 但是并不能让读者知晓具体的研究领域, 这会打消那些带着较强目的性查找文献的读者阅读兴趣\XG{.}\\
           \textit{On a nonlinear parabolic problem from physics \\ \ \ \  (关于一个物理学的非线性抛物线问题)}
-    \item 避免名称缩写, 避免符号, 下面这个标题中的缩写可能使一些非专业读者产生困惑\\
+    \item 避免名称缩写, 避免符号, 下面这个标题中的缩写可能使一些非专业读者产生困惑\XG{.}\\
           \textit{The conjecture of Budd-Smith-Watson in unframed HBK geometry  \\ \ \ \ (无框HBK几何中Budd-Smith-Watson的猜想)}
 \end{itemize}
 \par
-同时, \textbf{笔者认为好的标题通常有如下特征, 大家可以参考这些标题的格式设计自己的标题}: 
+同时, \textbf{笔者认为好的标题通常有如下特征, 大家可以参考这些标题的格式设计自己的标题}:
 \begin{itemize}
-    \item 生动而信息丰富\\
+    \item 生动而信息丰富\XG{.}\\
           \textit{Computing the eigenvalues and eigenvectors of symmetric arrowhead matrices \\ \ \ \ (对称箭型矩阵特征值和特征向量的计算)}
-    \item 使用疑问句, 吸引读者兴趣\\
+    \item 使用疑问句, 吸引读者兴趣\XG{.}\\
           \textit{How and how not to check Gaussian quadrature formulae \\ \ \ \ (如何以及如何不检查高斯积分公式)}
-    \item 一般性说明后紧跟更具体的信息\\
+    \item 一般性说明后紧跟更具体的信息\XG{.}\\
           \textit{Regression Diagnostics: Identifying Influential Data and Sources of Collinearity \\  \ \ \
               (回归诊断: 确定有影响力的数据和共线性的来源)}
 \end{itemize}
 \subsubsection{作者}
-\textbf{在数学领域中, 如果一篇论文由多个作者共同完成, 一般按照姓氏字母顺序列出作者.} 这种做法相对公平, 也能避免纷争. 笔者也曾遇到过有些同学因为论文署名的顺序问题而闹矛盾的现象, 如果他们能采用这一做法, 兴许可以避免这样的矛盾. 当然也会有这种情况: 有些同学对论文贡献最多, 却因为名字拼音的字母顺序, 没有成为第一作者, 这时应该协商寻找其他方法来进行补偿(如其他同学在修改与投稿阶段承担更多工作等). 
+\textbf{在数学领域中, 如果一篇论文由多个作者共同完成, 一般按照姓氏字母顺序列出作者.} 这种做法相对公平, 也能避免纷争. 笔者也曾遇到过有些同学因为论文署名的顺序问题而闹矛盾的现象, 如果他们能采用这一做法, 兴许可以避免这样的矛盾. 当然也会有这种情况: 有些同学对论文贡献最多, 却因为名字拼音的字母顺序, 没有成为第一作者, 这时应该协商寻找其他方法来进行补偿(如其他同学在修改与投稿阶段承担更多工作等).
 \subsubsection{摘要}
-笔者自身深有体会: 在寻找文献时, 往往会把重点放在阅读论文的摘要上, 如果摘要展示的内容和我研究的方向有关, 我就会继续阅读论文的具体内容. \textbf{读者希望从摘要中了解到的是作者想通过这篇论文告诉读者什么、研究这个问题的意义以及最终的结果.}\par
-正因如此, 摘要应尽可能包含这些信息, 但切忌繁琐冗长, 可以使用 $$\text{句子数}=(0.3 \sim 0.5)\times \text{页面数}$$ 这个公式\cite{pakhow}来确定摘要的长度. 为了精简, 摘要中不需要提供严格的定义、证明和详细的结果说明, 应该用精炼的语句描述本文的内容；同时避免无用的衔接, 比如: “在本文中, 除了$\cdots\cdots$, 我们还证明了$\cdots\cdots$", 有些同学在完成有字数要求的课程论文时喜欢使用这些语句；此外, 避免在摘要中使用大量的公式和符号, 语言尽可能通俗易懂. \par
+笔者自身深有体会: 在寻找文献时, 往往会把重点放在阅读论文的摘要上, 如果摘要展示的内容和我研究的方向有关, 我就会继续阅读论文的具体内容. \textbf{读者希望从摘要中了解到的是作者想通过这篇论文告诉读者什么, 研究这个问题的意义以及最终的结果.}\par
+正因如此, 摘要应尽可能包含这些信息, 但切忌繁琐冗长, 可以使用 $$\text{句子数}=(0.3 \sim 0.5)\times \text{页面数}$$ 这个公式\cite{pakhow}来确定摘要的长度. 为了精简, 摘要中不需要提供严格的定义, 证明和详细的结果说明, 应该用精炼的语句描述本文的内容；同时避免无用的衔接, 比如: \XG{``}在本文中, 除了$\cdots\cdots$, 我们还证明了$\cdots\cdots$", 有些同学在完成有字数要求的课程论文时喜欢使用这些语句；此外, 避免在摘要中使用大量的公式和符号, 语言尽可能通俗易懂. \par
 \textbf{写完摘要后不要忘记选取关键词以及确定分类号.} 合适的关键词可以让读者在一定程度上预见我们论文的内容, 分类号则反映了我们论文的研究方向. Mathematical Reviews 数学学科分类(2020)\footnote{来自: \url{https://msc2020.org/}}将数学学科分为 64 个大类, 并进一步分为许多小类, 以五位代码标记, 例如: 05A20 代表组合学中的组合不等式, 65F05 代表数值线性代数中求解线性系统的直接方法. 提供准确的分类号将有助于读者索引我们的论文, 从而扩大论文的影响.
 \subsubsection{引言}
-其实在本科阶段的学术写作中, 引言并不是必须的, 因为大家写的论文并不是很长, 有时候摘要就可以对论文的内容进行较好的概括. 但事实上, 完整的引言和摘要在包含的内容上还是存在较大差异的. \textbf{笔者认为引言可以包括以下几个方面的内容}: 
+其实在本科阶段的学术写作中, 引言并不是必须的, 因为大家写的论文并不是很长, 有时候摘要就可以对论文的内容进行较好的概括. 但事实上, 完整的引言和摘要在包含的内容上还是存在较大差异的. \textbf{笔者认为引言可以包括以下几个方面的内容}:
 \begin{enumerate}
-    \item 阐述论文研究的问题: 不要简单的叙述, 加入我们的思考
-    \item 研究问题时遇到的困难以及我们是如何解决的: 侧重点是解决方法
-    \item 相关工作以及最先进的结果: 用精简的语言描述
-    \item 本文创新性点: 这是我们论文的“卖点”, 一定要突出
-    \item 主要的思路: 论文中主要的证明过程、实现结果的算法
-    \item 概述文章的逻辑结构
+    \item 阐述论文研究的问题: 不要简单的叙述, 加入我们的思考\XG{;}
+    \item 研究问题时遇到的困难以及我们是如何解决的: 侧重点是解决方法\XG{;}
+    \item 相关工作以及最先进的结果: 用精简的语言描述\XG{;}
+    \item 本文创新性点: 这是我们论文的\XG{``}卖点'', 一定要突出\XG{;}
+    \item 主要的思路: 论文中主要的证明过程, 实现结果的算法\XG{;}
+    \item 概述文章的逻辑结构\XG{.}
 \end{enumerate}
 \subsubsection{主体}
 笔者在阅读了许多数学方面的论文, 进行归纳总结后发现: 常见的数学领域学术论文都可以归类为理论推导型和数值实验型. 因此, \textbf{笔者就论文的主体部分给出了如下两种结构示例, 供大家参考}:
 \begin{multicols}{2}
-    理论证明型: 
+    理论证明型:
     \begin{itemize}
         \item 引言
         \item 符号定义 (有时将引理定理列在此后)
@@ -112,7 +113,7 @@
         \item 定理 2 证明
         \item 拓展
     \end{itemize}
-    \ \ \ \   数值算法型: 
+    \ \ \ \   数值算法型:
     \begin{itemize}
         \item 引言
         \item 符号定义和算子
@@ -122,116 +123,141 @@
         \item 数值实验
     \end{itemize}
 \end{multicols}
-\par 事实上, 数学领域中的许多论文或多或少都会同时涉及到这两种类型, 大家在学术写作过程中应该根据实际情况灵活运用. 
-\par \textbf{关于学术论文的主体部分, 笔者还想给大家几点注意事项.} 可能大家会觉得这些注意事项在自己实际写作的过程中一般都会遵循, 但是笔者还是想再提一下: 
+\par 事实上, 数学领域中的许多论文或多或少都会同时涉及到这两种类型, 大家在学术写作过程中应该根据实际情况灵活运用.
+\par \textbf{关于学术论文的主体部分, 笔者还想给大家几点注意事项.} 可能大家会觉得这些注意事项在自己实际写作的过程中一般都会遵循, 但是笔者还是想再提一下:
 \begin{itemize}
-    \item 分几部分组织论文, 应包含符号定义, 完整证明, 数值实现等内容
-    \item 将冗长的证明分为几个步骤或几个引理
-    \item 给公式进行编号, 长篇论文建议采用双编号(如5.2), 方便自己后续引用以及读者查找
-    \item 写作过程中注意逻辑
-    \item 可以简化一些不是很重要的证明过程或是文字叙述, 突出重点
+    \item 分几部分组织论文, 应包含符号定义, 完整证明, 数值实现等内容\XG{;}
+    \item 将冗长的证明分为几个步骤或几个引理\XG{;}
+    \item 给公式进行编号, 长篇论文建议采用双编号(如5.2), 方便自己后续引用以及读者查找\XG{;}
+    \item 写作过程中注意逻辑\XG{;}
+    \item 可以简化一些不是很重要的证明过程或是文字叙述, 突出重点\XG{.}
 \end{itemize}
 \subsubsection{总结}
-正如前文提到的那样, 在完成课程论文时, 我们很少会把总结性的段落单独拿出来作为论文结构中的一部分. 但如果我们的论文确实需要单独的一个总结部分, 笔者还是想纠正大家的一个认知误区. 许多人会认为总结就是把摘要、引言中关于文章内容的部分再简单重复一遍, 这个观点是不妥的. \textbf{笔者认为总结部分更应该突出我们自己的想法, 我们可以指出自己所做工作的局限性, 并且为他人做进一步研究提供建议. 如果只是复述引言和摘要的内容, 这样的总结大可不必.}
+正如前文提到的那样, 在完成课程论文时, 我们很少会把总结性的段落单独拿出来作为论文结构中的一部分. 但如果我们的论文确实需要单独的一个总结部分, 笔者还是想纠正大家的一个认知误区. 许多人会认为总结就是把摘要, 引言中关于文章内容的部分再简单重复一遍, 这个观点是不妥的. \textbf{笔者认为总结部分更应该突出我们自己的想法, 我们可以指出自己所做工作的局限性, 并且为他人做进一步研究提供建议. 如果只是复述引言和摘要的内容, 这样的总结大可不必.}
 \subsubsection{致谢}
-关于致谢部分, Rota 的观点是: ``给予充分的感谢, 即尽可能多地把那些对我们论文写作产生帮助的人或是机构写入致谢部分, 并且语句中应该表现出自己的真情实意''\cite{RotaTen1997}. 笔者大体上赞同 Rota 的观点, \textbf{事实上致谢部分是整篇学术论文中最能体现我们情感的地方. }大家不妨设想一下, 我们在写自己的毕业论文, 写完这篇论文并且顺利地提交, 意味着我们即将结束自己近15年的求学生涯正式踏入社会, 我们一定会回忆起这一路上家人、朋友、老师甚至是陌生人给我们提供的帮助, 正是他们的支持与鼓励, 让我们这一路上不是孤军奋战, 让枯燥单调的学习生活变得充满温情和感动. 想到这我们自然会有抒发自己感情的冲动, 这样我们写出的致谢部分才能真正打动读者, 才能算是真正意义上的``致谢”. 
-\par \textbf{正因为致谢部分是论文写作中极其灵活的一个部分, 笔者只从大体上给大家一些建议}: 
+关于致谢部分, Rota 的观点是: ``给予充分的感谢, 即尽可能多地把那些对我们论文写作产生帮助的人或是机构写入致谢部分, 并且语句中应该表现出自己的真情实意''\cite{RotaTen1997}. 笔者大体上赞同 Rota 的观点, \textbf{事实上致谢部分是整篇学术论文中最能体现我们情感的地方. }大家不妨设想一下, 我们在写自己的毕业论文, 写完这篇论文并且顺利地提交, 意味着我们即将结束自己近15年的求学生涯正式踏入社会, 我们一定会回忆起这一路上家人, 朋友, 老师甚至是陌生人给我们提供的帮助, 正是他们的支持与鼓励, 让我们这一路上不是孤军奋战, 让枯燥单调的学习生活变得充满温情和感动. 想到这我们自然会有抒发自己感情的冲动, 这样我们写出的致谢部分才能真正打动读者, 才能算是真正意义上的``致谢''.
+\par \textbf{正因为致谢部分是论文写作中极其灵活的一个部分, 笔者只从大体上给大家一些建议}:
 \begin{itemize}
-    \item 可以按照重要性递增的顺序进行感谢
-    \item 在重要性相近的情况下, 将需要感谢的人按照名字中的字母顺序进行排列
-    \item 挑出提供重要建议的人重点感谢,例如: ``特别感谢 Adam Smith 介绍的引理, 这一结果在第 3 节的分析中起了简化作用”
-    \item 感谢我们所在的机构以及提供资助等帮助的机构
+    \item 可以按照重要性递增的顺序进行感谢\XG{;}
+    \item 在重要性相近的情况下, 将需要感谢的人按照名字中的字母顺序进行排列\XG{;}
+    \item 挑出提供重要建议的人重点感谢,例如: ``特别感谢 Adam Smith 介绍的引理, 这一结果在第 3 节的分析中起了简化作用''\XG{;}
+    \item 感谢我们所在的机构以及提供资助等帮助的机构\XG{.}
 \end{itemize}
 \subsubsection{参考文献引用}
 大家在论文写作的过程中时常会忽视参考文献引用的重要性. 就拿笔者自身经历来说, 在完成课程论文时, 笔者经常只会花几分钟将用到的文献一股脑儿全堆到文章最后, 稍微调整一下格式就当是完成了文献引用. 因此, \textbf{在开始这一部分的叙述之前, 笔者想让大家通过思考一个问题认识到参考文献引用在论文写作中的重要性, 这个问题是: 我们为什么要写论文？}\par
-笔者曾在课堂上问过同学们这个问题, 大家的回答都比较统一: 为了提升自己的学术素养而写论文. 当然这是一个很到位很有深度的回答, 也许有的人会说: “我写论文只是为了完成课程作业或者只是为了能顺利毕业. ”这样的回答很直白, 应该也是很大一部分同学的真实心声. 上述的回答是大家站在学生的立场上给出的, 现在不妨跳出这个立场, 从更高的层次看这个问题, 也许大家能给出更深刻的答案: 我们写论文是因为我们喜欢这么做. 我们喜欢让别人欣赏我们的工作, 我们喜欢参加学术交流会来分享自己的论文, 我们希望更多的人阅读我们的论文, 我们希望自己的论文可以为更大的工作奠定基础, 说不定我们的论文帮助解决了一个数学界的难题. \par
+笔者曾在课堂上问过同学们这个问题, 大家的回答都比较统一: 为了提升自己的学术素养而写论文. 当然这是一个很到位很有深度的回答, 也许有的人会说: \XG{``}我写论文只是为了完成课程作业或者只是为了能顺利毕业. ''这样的回答很直白, 应该也是很大一部分同学的真实心声. 上述的回答是大家站在学生的立场上给出的, 现在不妨跳出这个立场, 从更高的层次看这个问题, 也许大家能给出更深刻的答案: 我们写论文是因为我们喜欢这么做. 我们喜欢让别人欣赏我们的工作, 我们喜欢参加学术交流会来分享自己的论文, 我们希望更多的人阅读我们的论文, 我们希望自己的论文可以为更大的工作奠定基础, 说不定我们的论文帮助解决了一个数学界的难题. \par
 仔细想想这是多么令人愉快的事, 而要实现这一切都离不开参考文献的帮助. 如果我们在阅读别人的一篇论文时, 发现自己的某一个观点理论被引用了, 但是作者却并没有在文章的任何地方提到我们以及我们的论文, 我们一定会感到失落和愤怒. 所以推己及人, \textbf{我们在写论文时应该给予他人研究成果应有的尊重, 尽可能谨慎地对待参考文献引用这件看似很小实则意义重大的事}. \par
-接下来, 笔者将给大家一些引用参考文献时的注意事项: 
+接下来, 笔者将给大家一些引用参考文献时的注意事项:
 \begin{itemize}
     % \item 一般情况下在论文最后列出我们所引用的全部资料
-    \item 引用论文时注意引用的格式和细节, 包阔论文标题大小写, 期刊名是否缩写
-    \item 引用部分来源于书籍时, 一定要给出引用部分所在的页码, 没有人会翻阅一本几百页的书来找到我们引用的某个定理
-    \item 公理不需要我们提供参考文献
-    \item 引用没有公开发表的论文, 需要提供网页链接
-    % \item 避免这样的引用: A.Friend.Private communication,2014, 我们可以在致谢里感谢和我们朋友的这一次谈话
-    \item 可以根据参考文献对我们论文的帮助程度, 采取不同的表达方式, 一些帮助较小的文献可以放在脚注里
-    \item 引用一系列文章时, 根据贡献大小依次排列, 贡献最大的放在最前面
-    \item 引言中最好只提到最相关的论文, 避免在论文主体部分加入大段的引用, 提升论文的流畅性
+    \item \XG{参考文献通常按照第一作者的姓氏首字母顺序进行排列\footnote{也有少部分例外, 如 GB/T7714-2015 格式要求按文中引用的顺序排列}}\XG{;}
+    \item 引用论文时注意引用的格式和细节, 包括论文标题大小写, 期刊名是否缩写\XG{;}
+    \item 引用部分来源于书籍时, 一定要给出引用部分所在的页码, 没有人会翻阅一本几百页的书来找到我们引用的某个定理\XG{;}
+    \item 公理不需要我们提供参考文献\XG{;}
+    \item 引用没有公开发表的论文, 需要提供网页链接\XG{;}
+          % \item 避免这样的引用: A.Friend.Private communication,2014, 我们可以在致谢里感谢和我们朋友的这一次谈话
+          %\item 可以根据参考文献对我们论文的帮助程度, 采取不同的表达方式, 一些帮助较小的文献可以放在脚注里
+          %\item 引用一系列文章时, 根据贡献大小依次排列, 贡献最大的放在最前面
+    \item 引言中最好只提到最相关的论文, 避免在论文主体部分加入大段的引用, 提升论文的流畅性\XG{.}
 \end{itemize}
 \par
-其实笔者最希望大家通过阅读这一部分的内容, 能够重视学术道德的提高, 在日后的学术道路上学会尊重, 这才是最重要的. 
+其实笔者最希望大家通过阅读这一部分的内容, 能够重视学术道德的提高, 在日后的学术道路上学会尊重, 这才是最重要的.
 \subsection{细节建议}
-在这一节中, 笔者将给出论文写作时的一些细节建议, 这些小的细节将会使我们的论文更加清晰明了, 改善读者的阅读体验感. 
+在这一节中, 笔者将给出论文写作时的一些细节建议, 这些小的细节将会使我们的论文更加清晰明了, 改善读者的阅读体验感.
 \subsubsection{表达以及页面布局要清晰}
-有人曾经问 Noga Alon\footnote{以色列数学家, 普林斯顿大学数学教授, 以其对组合学和理论计算机科学的贡献而闻名, 曾撰写过数百篇论文}教授如何在论文写作时轻而易举地做到清晰明了, 他回答道: “当我们前300篇论文发表后, 这一切都会变得更加容易”\cite{pakhow}. \textbf{这句话想强调的并不是为了我们必须写300篇论文才能做到表达清晰, 而是想告诉大家做到表达清晰并不是想象的那么容易, 教授尚且如此, 更何况我们大学生.} \par
+有人曾经问 Noga Alon\footnote{以色列数学家, 普林斯顿大学数学教授, 以其对组合学和理论计算机科学的贡献而闻名, 曾撰写过数百篇论文}教授如何在论文写作时轻而易举地做到清晰明了, 他回答道: \XG{``}当我们前300篇论文发表后, 这一切都会变得更加容易''\cite{pakhow}. \textbf{这句话想强调的并不是为了我们必须写300篇论文才能做到表达清晰, 而是想告诉大家做到表达清晰并不是想象的那么容易, 教授尚且如此, 更何况我们大学生.} \par
 也许大家会产生疑问: 表达清晰真的那么重要吗？要回答这个问题, 我们必须想象读者是如何阅读我们的论文的. 假设老师正在对我们的课程论文进行评分, 他发现我们论文中有一处表达不清晰, 虽然老师能够理解我们想表达的意思, 但是他会认为我们是一个不严谨的同学, 可能我们论文的研究成果本来能使我们拿到4.0的成绩, 但是最后老师只想给我们3.7. 其实我们本可以花个 5-10 分钟的时间让我们论文的表达更清晰, 但我们并没有这么做, 为此付出了比较大的代价. \textbf{总而言之, 无论是课程评分, 还是论文的发表, 表达清晰的论文都更具有竞争力.} \par
-让我们回到现实, 不知道大家在论文写作时是否会遇到这样的情况: 在论文某一部分中将 $h$ 用作了变量, 而在另一部分中却又将 $h$ 定义为函数, 更糟糕的是我们还没有在文章中做出相应的解释. 如果我们做过这样的事的话, 说明我们还未做到表达清晰. 笔者自己在论文写作时距离表达清晰还有很大的距离, 不敢在这方面夸夸其谈, \textbf{所以这一部分只是提出一些最基本的建议, 希望对大家有所帮助. }
+让我们回到现实, 不知道大家在论文写作时是否会遇到这样的情况: 在论文某一部分中将 $h$ 用作了变量, 而在另一部分中却又将 $h$ 定义为函数, 更糟糕的是我们还没有在文章中做出相应的解释. 如果我们做过这样的事的话, 说明我们还未做到表达清晰. 笔者自己在论文写作时距离表达清晰还有很大的距离, 不敢在这方面夸夸其谈, \textbf{所以这一部分只是提出一些最基本的建议, \XG{这些建议涵盖的方面包括:表达方式的选择, 句子结构, 数学符号以及数学公式的表达}.希望对大家有所帮助. }
 \begin{itemize}
-    \item 指代要明确: A 具有性质 B, 但没有性质 C, 这个性质可以使 A $\cdots\cdots$. 交代清楚“这个性质”究竟是指 B 还是 C
-    \item 在写具有复杂逻辑结构的句子时, 逻辑要清晰, 比如具有多个嵌套的条件和结果的句子: 如果 X 和 Y 或 Z 成立, 则可得到 P 或 Q
-    \item 避免使用繁琐的符号, 例如: $M_{i_{j, k_{t}}}^{O_{b}^{c}}$
-    \item 每一页中数学公式和文字的比例应该适当. 某一页中文字过多或者数学公式过多, 都会让读者看得很难受. 在进行证明时不要像平时写作业一样全是数学公式, 应该配上一些解释性文字. 因为许多读者在第一遍阅读时都会选择跳过数学公式. 学术写作最常出现的问题之一就是没有告知读者自己推理论证的思路, 也许这些推理论证的过程对我们来说都是很显然的, 但是我们仔细想想自己花了多长时间弄懂这些过程, 我们不能指望读者在短得多的时间内, 在没有帮助的情况下, 得出同样的结论；文字叙述过多会使论文显得不简练, 会让读者觉得我们的论证缺少根据, 不可信
+    \item 当涉及到标准或简单的概念时, 多余的解释会使论文不清晰. 例如: 当我们用一些图形覆盖一个区域时, 没有必要很详细地叙述我们是如何做到不重叠完全覆盖这个区域的, 可以直接用一幅图来代替\XG{.}
+    \item 尽量避免使用很长的句子. 有些句子从语法的角度看是不需要用逗号隔开的, 但是我们仍然可以用逗号隔开, 这样做一定程度上可以让读者更容易理解句子的意思, 但同时不要过多使用逗号, 否则会影响文章的流畅性\XG{.}
+    \item 在写具有复杂逻辑结构的句子时, 逻辑要清晰, 比如具有多个嵌套的条件和结果的句子: 如果 X 和 Y 或 Z 成立, 则可得到 P 或 Q\XG{.}
+    \item 指代要明确: A 具有性质 B, 但没有性质 C, 这个性质可以使 A $\cdots\cdots$. 交代清楚\XG{``}这个性质''究竟是指 B 还是 C\XG{.}
+    \item 避免使用繁琐的符号, 例如: $M_{i_{j, k_{t}}}^{O_{b}^{c}}$\XG{.}
+    \item 每一页中数学公式和文字的比例应该适当. 某一页中文字过多或者数学公式过多, 都会让读者看得很难受. 在进行证明时不要像平时写作业一样全是数学公式, 应该配上一些解释性文字. 因为许多读者在第一遍阅读时都会选择跳过数学公式. 学术写作最常出现的问题之一就是没有告知读者自己推理论证的思路, 也许这些推理论证的过程对我们来说都是很显然的, 但是我们仔细想想自己花了多长时间弄懂这些过程, 我们不能指望读者在短得多的时间内, 在没有帮助的情况下, 得出同样的结论；文字叙述过多会使论文显得不简练, 会让读者觉得我们的论证缺少根据\XG{.}
     \item 公式必须包含在带有适当标点符号的完整句子中, 结束句子的公式需要以句号结尾, 不结束句子的公式后需要跟逗号, 示例如下: \par
-          面包店总收入$R$的计算公式为: 
+          面包店总收入$R$的计算公式为:
           \begin{equation*}
               R=pq,
           \end{equation*}
-          这里$p$是面包的价格, $q$是卖出面包的数量, 根据历史经验当每个面包定价15元时, 可以卖出2000个面包. 同时, 面包价格每增加1元,将会少卖出150个面包. 因此如果面包价格上升$x$元,则收入为: 
+          这里$p$是面包的价格, $q$是卖出面包的数量, 根据历史经验当每个面包定价15元时, 可以卖出2000个面包. 同时, 面包价格每增加1元,将会少卖出150个面包. 因此如果面包价格上升$x$元,则收入为:
           \begin{equation*}
               \begin{split}
                   R&=(15+x)(2000-150x)\\
                   &=-150x^{2}-250x+30,000.
               \end{split}
           \end{equation*}
-    \item 重要的或较长的公式应该单独成行, 这将使我们的文章易于阅读, 比较以下两种写法我们将有直观的感受: 
+    \item 重要的或较长的公式应该单独成行, 这将使我们的文章易于阅读, 比较以下两种写法我们将有直观的感受:
           \begin{enumerate}
-              \item 令$d$为Bob距离地面的距离, $t$为Bob落地的时间, $d$与$t$满足关系式$d = 100 − 16t^{2}$. 我们求解方程$100 − 16t^{2} = 0$, 解得$t =2.5$, 因而Bob将在2.5秒后落地. 
-              \item 令$d$为Bob距离地面的距离, $t$为Bob落地的时间, $d$与$t$满足关系式: 
+              \item 令$d$为Bob距离地面的距离, $t$为Bob落地的时间, $d$与$t$满足关系式$d = 100 − 16t^{2}$. 我们求解方程$100 − 16t^{2} = 0$, 解得$t =2.5$, 因而Bob将在2.5秒后落地.
+              \item 令$d$为Bob距离地面的距离, $t$为Bob落地的时间, $d$与$t$满足关系式:
                     \begin{equation*}
                         d = 100 − 16t^{2},
                     \end{equation*}
-                    我们求解以下方程: 
+                    我们求解以下方程:
                     \begin{equation*}
                         100 − 16t^{2} =0,
                     \end{equation*}
-                    解得 $t =2.5$, 因而Bob将在2.5秒后落地. 
+                    解得 $t =2.5$, 因而Bob将在2.5秒后落地.
           \end{enumerate}
-    \item 当涉及到标准或简单的概念时, 多余的解释会使论文不清晰. 例如: 当我们用一些图形覆盖一个区域时, 没有必要很详细地叙述我们是如何做到不重叠完全覆盖这个区域的, 可以直接用一幅图来代替
-    \item 尽量避免使用很长的句子. 有些句子从语法的角度看是不需要用逗号隔开的, 但是我们仍然可以用逗号隔开, 这样做一定程度上可以让读者更容易理解句子的意思, 但同时不要过多使用逗号, 否则会影响文章的流畅性
 \end{itemize}
 \subsubsection{插图的注意事项}
-特别是在写作数值实验型论文时, 大家都会用到许多图片. 插入图片能使某些结果更加直观, 但是需要控制图片的大小. 如果图片过大, 包含的细节太多, 会破坏论文的流畅性. 如果我们很有必要使用这种类型的图片, 可以把它们放到附录里. 
+特别是在写作数值实验型论文时, 大家都会用到许多图片. 插入图片能使某些结果更加直观, 但是需要控制图片的大小. 如果图片过大, 包含的细节太多, 会破坏论文的流畅性. 如果我们很有必要使用这种类型的图片, 可以把它们放到附录里.
 \subsubsection{数学符号使用的注意事项}
-细节处见真章. 在论文中能否规范地使用数学符号, 可以体现作者的学术素养高低, 为此笔者提出以下注意事项: 
+细节处见真章. 在论文中能否规范地使用数学符号, 可以体现作者的学术素养高低, 为此笔者提出以下注意事项:
 \begin{itemize}
-    \item 相同的符号不能用来表示不同的东西
-    \item 所有的变量第一次出现的时候都要进行解释说明
-    \item 使用标准的、公认的符号. 比如: 自然数就用$N$表示
-    \item 某一符号隔了多页再次出现, 记得再次解释
-    \item 在文字论述时, 不要使用数学符号代替汉字. 比如: 用$\because$代替因为, 用$\therefore$代替所以
+    \item 相同的符号不能用来表示不同的东西\XG{;}
+    \item 所有的变量第一次出现的时候都要进行解释说明\XG{;}
+    \item 使用标准的, 公认的符号. 比如: 自然数就用$N$表示\XG{;}
+    \item 某一符号隔了多页再次出现, 记得再次解释\XG{;}
+    \item 在文字论述时, 避免数学符号代替汉字. 比如: 可以用$\because$代替因为, 用$\therefore$代替所以\XG{.}
 \end{itemize}
 \subsubsection{其他注意事项}
 \begin{itemize}
-    \item 不要随意更改专业术语
-    \item 在学术论文写作中不要忌讳使用“我们”一词
-    \item 尽量不要用符号或者公式作为一个句子的开头. 例如:“$x^{n}-a$有$n$个不同的零点. ”可以改成“多项式方程$x^{n}-a$有$n$个不同的零点. ”
+    \item \XG{保持专业术语的一致性}\XG{;}
+    \item \XG{在学术论文写作中,可以使用\XG{``}我们''一词}\XG{;}
+    \item \XG{符号或者公式作为句子开头时加上前缀.} 例如\XG{``}$x^{n}-a$有$n$个不同的零点. ''可以改成\XG{``}多项式方程$x^{n}-a$有$n$个不同的零点''\XG{.}
 \end{itemize}
 \section{写作后: 自我检查}
 所有写作都受益于修订. 因此, 在我们完成一篇论文后不要急着提交, 而是应该做到有效的自我检查. \textbf{试想我们提交了一篇充满小错误的论文初稿给指导老师, 那么指导老师根本没有精力去给我们的论文提出建设性的建议, 所有的精力都用来给我们指出这些小错误了.} \textbf{做到有效的自我检查, 不仅需要我们理解掌握基本的论文写作原则, 还需要我们有发现错误的能力以及纠正错误的技巧和勇气. }\par
-\textbf{我们可以将初稿搁置几天, 以便重新思考. }然后以不同的方式分析草稿, 快速阅读来检查句子是否流畅、句子的长度是否合适、公式和文本之间是否有良好的平衡、论文看起来是否吸引人以及关键思想是否突出等等. 有时候耳朵比眼睛更有说服力. 当我们朗读我们的论文时, 如果感觉听上去怪怪的, 很有可能这一部分我们的遣词造句或是逻辑关系存在问题. \par
-下面笔者将给大家两个Checklist\cite{TanChecklist}, 供大家在自我检查时参考: 
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.875\textwidth]{figure/Figure 7.1.png}
-    \caption{Checklist 1}
-    \label{fig:my_label}
-\end{figure}
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.9\textwidth]{figure/Figure 8.2.png}
-    \caption{Checklist 2}
-    \label{fig:my_label}
-\end{figure}
+\textbf{我们可以将初稿搁置几天, 以便重新思考. }然后以不同的方式分析草稿, 快速阅读来检查句子是否流畅, 句子的长度是否合适, 公式和文本之间是否有良好的平衡, 论文看起来是否吸引人以及关键思想是否突出等等. 有时候耳朵比眼睛更有说服力. 当我们朗读我们的论文时, 如果感觉听上去怪怪的, 很有可能这一部分我们的遣词造句或是逻辑关系存在问题. \par \XG{
+    下面笔者将给大家两个Checklist\cite{TanChecklist}, 分别对应词句和公式细节, }供大家在自我检查时参考:
+
+\begin{center}
+    \noindent\fbox{
+        \parbox{0.9\linewidth}{\XG{$\qedsymbol$ Can any words, phrases or sentences be deleted without loss of force or meaning?             \\
+                $\qedsymbol$ Can you replace any long, woolly words with short, pithy ones ?                               \\
+                $\qedsymbol$ Are sentences and paragraphs in the best order, or should they be reordered or restructured? \\
+                $\qedsymbol$ Are there any ambiguities or blatantly wrong words?                                          \\
+                $\qedsymbol$ Is there any unnecessary repetition?                                                      \\
+                $\qedsymbol$ Can you convert a sentence from the passive to the active voice?                             \\
+                $\qedsymbol$ Is the notation consistent? Can it be simplified or made more logical?             \\
+                $\qedsymbol$ Have quotations, references and numerical results been copied into the paper correctly?      \\
+                $\qedsymbol$ Is due reference made to the work of other authors?                                \\
+                $\qedsymbol$ Are all the cross-references and bibliographic citations correct?
+                \\
+                $\qedsymbol$ Are there any words, punctuation symbols, or phrases missed?}
+        }}
+    \ \\ \vspace{0.25cm} \  \\ \XG{Checklist 1: 词句细节}
+\end{center}
+
+\begin{center}
+    \noindent\fbox{
+        \parbox{0.9\linewidth}{\XG{
+                $\qedsymbol$ Unmatched parentheses: $a=(b+c/2$.                                       \\
+                $\qedsymbol$ Wrong font.                                                                   \\
+                $\qedsymbol$ O (capital Oh) for 0 (zero), l (lower case ell) for 1.                        \\
+                $\qedsymbol$ Bad line breaks in mathematical equations.                                    \\
+                $\qedsymbol$ Incorrectly formatted displayed equations (e.g. poor alignment in a multiline display). \\
+                $\qedsymbol$ Change in meaning of words or mathematics resulting from copy editor's rewriting.       \\
+                $\qedsymbol$ Missing mathematical symbols (e.g. $\eta \parallel Lx-b \parallel$ instead of $\eta = \parallel Lx-b \parallel$).                                                  \\
+                $\qedsymbol$ Misplaced mathematical symbols or wrong kind: subscript should be superscript. \\
+                $\qedsymbol$ Errors in numbers in tables.                                                  \\
+                $\qedsymbol$ Incorrect listed numbers of citation, equations and results.}
+        }}
+    \ \\ \vspace{0.25cm} \  \\ \XG{Checklist 2: 公式细节}
+\end{center}
+
 \chapter{资料获取与协作工具}
 在导师带领下开展研究时(不论是面对课程论文还是毕业设计), 我们很容易碰到以下两种情况:
 \begin{enumerate}
@@ -242,7 +268,7 @@
 \textbf{在本章中, 笔者将基于自己的经验分析以下三个部分:}
 \begin{enumerate}
     \item 首先, 介绍如何面对以上两种情况,快速了解研究主题;
-    \item 其次, 介绍如何利用权威的数据库资源平台获取论文全文;
+    \item 其次, 介绍如何\XG{选用便捷的}数据库资源平台获取论文全文;
           % \item 之后, 推荐能够高效管理这些文献的开源软件 \href{https://www.zotero.org/}{Zotero};
     \item 最后, 分享能够进行在线\LaTeX 合作写作的平台 \textbf{\href{https://www.overleaf.com/}{Overleaf}}.
 \end{enumerate}
@@ -273,7 +299,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{figure/bingSearch.png}
+    \includegraphics[width=0.6\textwidth]{figure/bingSearch.png}
     \caption{使用``关键词 + filetype:pdf''技巧在 Bing 中搜索pdf文件}
     \label{fig:bing}
 \end{figure}
@@ -286,12 +312,12 @@
 \subsection{文献数据库平台简介}
 数据库平台主要可以分为两类, 一类是全文数据库, 另一类是题录文摘数据库. 全文数据库, 顾名思义是包含文献全文的数据库, \textbf{常用的全文数据库有}:
 \begin{itemize}
-    \item 中文: 中国学术期刊网络出版总库(是世界上最大的连续动态更新的中国学术期刊全文数据库), 中国博士学位论文全文数据库等. 这些数据库资源都可以直接从\textbf{\href{https://www.cnki.net/}{中国知网}}\footnote{由清华大学和清华同方建于1999年, 网址为: \url{https://www.cnki.net}}获取. 而\href{http://www.cqvip.com/}{维普}和\href{https://new.wanfangdata.com.cn/index.html}{万方}也是两个较全面的中文全文数据库平台, 收录了大量中文文献全文, 在医学等学科领域有者各自独有的数据库. 一般直接从知网搜索即可获得大部分所需信息;
+    \item 中文: 中国学术期刊网络出版总库(是世界上最大的连续动态更新的中国学术期刊全文数据库), 中国博士学位论文全文数据库等. 这些数据库资源都可以直接从\textbf{\href{https://www.cnki.net/}{中国知网}}\footnote{由清华大学和清华同方建于1999年, 网址为: \url{https://www.cnki.net}}获取. 而\href{http://www.cqvip.com/}{维普}和\href{https://new.wanfangdata.com.cn/index.html}{万方}也是两个较全面的中文全文数据库平台, 收录了大量中文文献全文, 在医学等学科领域有者各自独有的数据库. 一般直接从知网搜索即可获得大部分所需信息\XG{.}
     \item 英文: 英文全文数据库可以分为两类, \textbf{一类是已发表文献数据库, 一类是预印本收录网站}:
           \begin{enumerate}
               \item \textbf{已发表英文文献数据库通常由图书馆购买}, 常用的有: \href{https://www.sciencedirect.com/}{ScienceDirect} (涵盖了Elsevier公司出版的1800多种期刊), \href{https://link.springer.com/}{SpringerLink} (涵盖了Springer出版的2900多种期刊), \href{https://www.ebsco.com}{EBSCO} (综合性平台, 代购买了许多子数据库), \href{http://www.pqdtcn.com/}{PQDT}
                     (ProQuest 下的博硕学位论文库) 等;
-              \item \textbf{预印本收录网站通常免费开放}, 预印本指尚未投稿或已投稿但尚未正式发表的文章, 作者可能会将未正式发表的论文全文上传至预印本网站, 表明成果的优先权并方便与同行间的及时交流. \textbf{\href{http://arxiv.org/}{arXiv}}\footnote{由物理学家 Ginsparg 建立于1991年, Cornell 大学负责运营维护, 网址为: \url{http://arxiv.org/}}是数学、物理学和计算机学科常用的预印本网站, 其他学科也有各自的预印本网站如 \href{https://www.biorxiv.org/}{bioRxiv}(生物学), \href{https://www.medrxiv.org/}{medRxiv}(医学)等.
+              \item \textbf{预印本收录网站通常免费开放}, 预印本指尚未投稿或已投稿但尚未正式发表的文章, 作者可能会将未正式发表的论文全文上传至预印本网站, 表明成果的优先权并方便与同行间的及时交流. \textbf{\href{http://arxiv.org/}{arXiv}}\footnote{由物理学家 Ginsparg 建立于1991年, Cornell 大学负责运营维护, 网址为: \url{http://arxiv.org/}}是数学, 物理学和计算机学科常用的预印本网站, 其他学科也有各自的预印本网站如 \href{https://www.biorxiv.org/}{bioRxiv}(生物学), \href{https://www.medrxiv.org/}{medRxiv}(医学)等.
           \end{enumerate}
 \end{itemize}
 
@@ -306,20 +332,21 @@
 
 \subsection{使用体验与建议}
 虽然我们已经介绍了许多著名的全文数据库和题录文摘数据库, 但在日常获取文献全文的过程中, 大家可能会面临一定的选择困难. 因此, 我们将在本节中给出对于\textbf{搜索数学论文}具体而可行的搜寻流程建议.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figure/mathscinet.png}
+    \caption{\href{https://mathscinet.ams.org/mathscinet}{MathSciNet} 具有权威而准确的搜索结果}
+    \label{fig:mathscinet}
+\end{figure}
 
 对于中文文献, 一般从学校已购买的知网即可获取, 其他选择也只有万方和维普两家, 远比英文文献获取要方便直接, 故在此不再赘述, \textbf{以下将着重分析英文文献的获取体验与建议}:
 \begin{enumerate}
     \item 首先是选择题录文摘数据库进行搜索, 根据搜索时的具体目的, 建议从以下三个数据库中进行选择:
           \begin{itemize}
               \item \textbf{\href{https://mathscinet.ams.org/mathscinet}{MathSciNet}: 追求权威性和准确性时的首选}, 如图~\ref{fig:mathscinet}, 作为数学领域特有的集成检索系统, 经测试其数学文献更新速度要比综合性数据库如 \href{http://apps.webofknowledge.com/}{Web of Science} 更加及时, 缺点是在分析引文时不够方便.
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.9\textwidth]{figure/mathscinet.png}
-                        \caption{\href{https://mathscinet.ams.org/mathscinet}{MathSciNet} 具有权威而准确的搜索结果}
-                        \label{fig:mathscinet}
-                    \end{figure}
+
               \item \textbf{\href{https://scholar.google.com/}{Google Scholar}: 需要关注全文pdf的版本时首选}, 如图~\ref{fig:googlesch}, 作为由搜索引擎提供的检索系统, 它的优势是能够汇集同一篇文章尽可能多的版本(如不同预印本和正式发表版本), 而 \href{https://mathscinet.ams.org/mathscinet}{MathSciNet} 等数据库一般只保留最终的发表版本(当然, 在没有特殊需求时建议阅读正式发表的版本), 但缺点也是分析引文时不够方便和众所周知的网络限制.
-                    \begin{figure}[H]
+                    \begin{figure}[htbp]
                         \centering
                         \includegraphics[width=0.9\textwidth]{figure/googlescholar.png}
                         \caption{\href{https://scholar.google.com/}{Google Scholar} 提供多个版本的全文pdf结果}
@@ -328,7 +355,7 @@
               \item \textbf{\href{https://www.semanticscholar.org/}{Semantic Scholar}: 分析文章引用时首选}, 如图~\ref{fig:semantic}, 作为新兴的集成检索系统, 它能够很方便地分析文献的引用和被引, 甚至能够直接展示引用时是引用背景还是引用方法. 而且它不需要图书馆购买即可免费使用(意味着无需校园网), 但缺点是信息不如前两个数据库准确, 不建议从此处搜寻全文的pdf.
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width=0.8\textwidth]{figure/semantic.png}
+                        \includegraphics[width=0.9\textwidth]{figure/semantic.png}
                         \caption{\href{https://www.semanticscholar.org/}{Semantic Scholar} 具有强大的引文分析功能}
                         \label{fig:semantic}
                     \end{figure}
@@ -362,7 +389,7 @@
     \label{fig:overleafMain}
 \end{figure}
 
-\subsection{主要特色功能}
+\subsection{主要特色功能}\label{subsection:features}
 
 \begin{enumerate}
     \item \textbf{在线编译\LaTeX }: Overleaf 的主界面如图~\ref{fig:overleafMain} 所示, 作为在线的\LaTeX 写作平台, 其首要特色当然是能够在线完成\LaTeX 编译, 从而免去了在个人电脑配置环境的麻烦. 关于\LaTeX 和 Overleaf 的完整使用教程可以参考 Overleaf 的官方文档 \url{https://www.overleaf.com/learn}.
@@ -370,15 +397,15 @@
     \item \textbf{历史版本保留}: Overleaf 提供了保留文件历史版本的功能, 每一次编译时的所有文件都会被保存在历史记录中, 可以如图~\ref{fig:history} 所示方便地对比版本, 不必担心无法找回之前删除的文段.
           \begin{figure}[H]
               \centering
-              \includegraphics[width=\textwidth]{figure/history.png}
+              \includegraphics[width=0.9\textwidth]{figure/history.png}
               \caption{Overleaf 中的历史版本对比}
               \label{fig:history}
           \end{figure}
     \item \textbf{与合作者交流}: Overleaf 提供了嵌入的 Chat 聊天框, 可以给合作者发送文字信息进行简单的交流, 也可以通过 Comment 功能对文件进行批注.
     \item \textbf{丰富的模板}: 除了在线编译外, Overleaf 还提供了丰富的\LaTeX 模板包括: 期刊, 报告, 简历, 书籍, 海报模板等, 如图~\ref{fig:template} 所示, 且可以直接在 Overleaf 上复制编辑, 地址为 \url{https://www.overleaf.com/gallery}.
           \begin{figure}[htbp]
-              \centering 
-              \includegraphics[width=0.95\textwidth]{figure/template.png}
+              \centering
+              \includegraphics[width=0.9\textwidth]{figure/template.png}
               \caption{Overleaf 中的论文模板示例}
               \label{fig:template}
           \end{figure}
@@ -387,20 +414,187 @@
 \subsection{注册与使用技巧}
 我们将一份 Overleaf 注册指南放在附录~\ref{overleafGuide}, 供大家参考. 此外, 国外众多高校都有购买 Overleaf Pro, 提供更加丰富的合作与同步功能, 不知何时我财图书馆也能迈出这一步 :).
 
-当然, 作为国外网站 Overleaf 有不可避免的缺点: 可能偶尔出现断连的情况, 但自2021年以来笔者使用时连接都很稳定, 可能是服务器情况有所改善. 读者也可以使用国内的类似平台 \textbf{\href{http://raisepub.com/}{RaisePub}}\footnote{是一个基于 Overleaf 源码开发的国内平台, 地址为: \url{http://raisepub.com/}}, 有十分稳定的连接速度和 Overleaf 的主要功能, 且目前完全免费.
+\XG{作为国外网站, Overleaf 难免偶尔出现连接不畅的情况. 官方给出的离线写作的解决方案是: 使用 Dropbox 或者 Git 同步到本地 , 使用本地编辑器编辑, 等到有网络时再同步回 Overleaf. 但其中 Dropbox 在国内很难正常使用, 而 Git 需要 Overleaf Pro 账号. 若读者经常受到网络因素困扰, 可以考虑以下两条解决方案:}
+
+\begin{itemize}
+    \item \XG{\textbf{使用国内类似平台:} 读者也可以尝试 \textbf{\href{http://raisepub.com/}{RaisePub}}\footnote{是一个基于 Overleaf 源码开发的国内平台, 地址为: \url{http://raisepub.com/}}, 有十分稳定的连接速度和 Overleaf 的主要功能, 且目前完全免费.}
+    \item \XG{\textbf{基于官方源码自行搭建:} Overleaf 本身是一个开源项目，在 Github 上可以找到官方源码\footnote{地址为: \url{https://github.com/overleaf/toolkit}}, 我们可以为实验室或小组搭建私人定制的 Overleaf. 根据官方安装指南\footnote{地址为: \url{https://github.com/overleaf/toolkit/blob/master/doc/quick-start-guide.md}} 在一台已安装 TeXLive 的 Linux 系统主机上利用 Docker\footnote{Docker 是一个虚拟环境容器, 使得应用可以被轻松迁移到不同平台运行}将 Overleaf 项目克隆到本地后, 只需要两条命令即可完成本地 Overleaf 的部署(如果需要他人能够访问, 需要满足有公网IP或类似条件).}
+\end{itemize}
+
+\XG{事实上, 前一方案中提到的 \href{http://raisepub.com/}{RaisePub} 就是使用第二种方案完成后向大家免费开放. 两种方案的共同缺点是只具有 Overleaf 的核心功能(因为官方保留了付费功能的源码未开源), 并不具备官方在线版 Overleaf 的 Git, DropBox, Zotero 同步. 或许在不久的将来能看到数学学院或是学校拥有自己的在线 LaTeX 合作平台, 甚至能看到大家开发出更多实用的功能. }
+
+\XG{最后, 如果有同学有兴趣搭建定制 Overleaf 平台, 欢迎联系笔者一起讨论(笔者或许能给出一些搭建服务器时的建议), 我们将十分乐意能提供帮助.}
 
 \chapter{后记}
-学术论文撰写和发表(或完成答辩)不是一件容易的事, 在学术研究中形成自己的想法并与他人分享, 是学术生活中最有意义的事之一. 论文的发表、讨论往往会带来新的见解和新的合作, 充分抓住完成论文机会与他人多交流讨论. 
+学术论文撰写和发表(或完成答辩)不是一件容易的事, 在学术研究中形成自己的想法并与他人分享, 是学术生活中最有意义的事之一. 论文的发表, 讨论往往会带来新的见解和新的合作, 充分抓住完成论文机会与他人多交流讨论.
 
-我们想要首先感谢付梅老师提出论文写作的话题, 并给我们提供与大家分享经验的机会, 并最后促成这份小册子. 在准备材料的过程中我们接触到许多教授对学术论文写作的建议, 了解了关于数学论文写作的历史与故事. 而在完成报告的过程中付老师极富耐心地与我们讨论, 并指引我们在还有余力时向 "做到$100$分" 的目标前进. 这些都将对我们未来的学术和工作生涯产生长远的影响.
+我们想要首先感谢付梅老师提出论文写作的话题, 并给我们提供与大家分享经验的机会, 并最后促成这份小册子. 在准备材料的过程中我们接触到许多教授对学术论文写作的建议, 了解了关于数学论文写作的历史与故事. 而在完成报告的过程中付老师极富耐心地与我们讨论, 并指引我们在还有余力时向 \XG{``}做到$100$分\XG{''} 的目标前进. 这些都将对我们未来的学术和工作生涯产生长远的影响.
 
-此外, 我们还想感谢各位聆听报告,以及提供建议的同学, 与我们在课上与课后的交流给了我们完成这份工作的动力. 我们也在之后聆听大家的报告中有很多收获, 再次表示衷心的感谢. 
+此外, 我们还想感谢各位聆听报告,以及提供建议的同学, 与我们在课上与课后的交流给了我们完成这份工作的动力. 我们也在之后聆听大家的报告中有很多收获, 再次表示衷心的感谢.
 
 受到笔者学术经验和时间的限制, 这份小册子还存在许多不足之处, 我们将 \LaTeX \ 代码开源在了 Github 上, 仓库地址为: \url{https://github.com/YerbaPage/WritingMath}. 欢迎各位读者通过Github与我们联系, 我们很期待各位的指正与补充.
 
 \addcontentsline{toc}{chapter}{参考文献}
-\printbibliography
+\XG{\printbibliography}
 \appendix
 \chapter{Overleaf 注册与使用指南}\label{overleafGuide}
-\includepdf[pages=-]{figure/OverleafGuide.pdf}
+\color{red}
+\section{注册}\label{header-n2}
+
+官网地址为: \url{https://www.overleaf.com/} (注: 使用邮箱注册时可能需要科学上网, 选择``使用 ORCID 注册''则可以不用科学上网)
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Guidepics/20210415183938.png}
+    \caption{注册界面}
+\end{figure}
+
+\section{功能免费升级}\label{header-n5}
+
+由于免费账号最多只能添加一位合作者, \textbf{团队总人数 \( \geq3\)时},
+大家可以通过以下步骤免费升级:
+
+\begin{enumerate}
+    \item 打开 \url{https://www.overleaf.com/user/bonus}
+          可以看到只要邀请一位好友即可增加一个名额, 满足三人合作;
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.8\textwidth]{Guidepics/20210415183943.png}
+              % \caption{image-20210415164134399}
+          \end{figure}
+    \item 项目创建者邀请合作从邀请链接\footnote{从 \url{https://www.overleaf.com/user/bonus} 可以获取}注册即可.
+\end{enumerate}
+
+\section{创建项目}\label{header-n10}
+
+常用的创建项目方式有以下两种:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Guidepics/20210415183951.png}
+    \caption{创建项目}
+\end{figure}
+
+\begin{enumerate}
+    \item
+          \textbf{可以上传本地的 tex 文件:} 上传好后如果编译报bug, 可能需要调整编译器:
+          \begin{enumerate}
+              \item 打开左上角菜单:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.7\textwidth]{Guidepics/20210415184001.png}
+                        \caption{主菜单}
+                    \end{figure}
+              \item 选择合适的编译器:
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.5\textwidth]{Guidepics/20210415183957.png}
+                        \caption{调整编译器的菜单}
+                    \end{figure}
+          \end{enumerate}
+
+          如果需要插图可以 Upload 上传
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.5\textwidth]{Guidepics/20210415185926.png}
+              \caption{上传图片等文件}
+          \end{figure}
+
+          如果最后想要下载到本地可以点击 Menu 菜单里的 Source
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.5\textwidth]{Guidepics/20210415185837.png}
+              \caption{下载项目源代码等文件或仅下载编译出的PDF}
+          \end{figure}
+
+    \item
+          \textbf{也可以直接打开已有模板: }例如课程参考论文模板\footnote{地址为: \url{https://www.overleaf.com/latex/templates/sufe-math-paper-template/brkdxtsjttxn}}或是 Section~\ref{subsection:features} 中提及的其他 Overleaf 免费开放模板\footnote{地址为: \url{https://www.overleaf.com/gallery}}.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.8\textwidth]{Guidepics/20210416170442.png}
+              \caption{点击 Open as Template 即可打开模板}
+          \end{figure}
+\end{enumerate}
+
+\section{分享合作}\label{header-n37}
+
+当需要与他人共享项目时, 可以在主界面的右上角点击 Share.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Guidepics/20210415184010.png}
+    \caption{分享项目给好友一起合作}
+\end{figure}
+
+\newpage
+输入合作者注册使用的邮箱即可邀请合作(若好友未注册则会自动发送注册邮件). 此外, 还可以修改合作者的权限为可以编辑或者只读.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Guidepics/20210415184012.png}
+    \caption{通过邮箱邀请合作者并设置权限}
+\end{figure}
+
+\section{其他辅助功能}\label{header-n42}
+在网页右上角的辅助功能菜单中还有很多实用的功能, 下面我们将简要介绍.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Guidepics/20210415184034.png}
+    \caption{辅助功能菜单}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Review}: 可以开启批注模式, 选中文本即可写下修改意见与合作者交流.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.9\textwidth]{Guidepics/20210415184018.png}
+              \caption{批注模式}
+          \end{figure}
+          \newpage
+    \item \textbf{History}: 可以追踪曾经的版本和修改记录 (免费版有历史记录限制, 可以通过~\ref{header-n5} 节中介绍的方法解锁),
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.35\textwidth]{Guidepics/20210415190237.png}
+              \caption{追踪版本历史}
+          \end{figure}
+
+          还可以与当前版本进行对比.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.9\textwidth]{Guidepics/20210415184022.png}
+              \caption{对比不同版本间的删改差异}
+          \end{figure}
+    \item \textbf{Chat}: 可以开启聊天框, 与合作者开启简单的在线交流.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.35\textwidth]{Guidepics/20210415184025.png}
+              \caption{与合作者交换意见}
+          \end{figure}
+\end{itemize}
+\newpage
+\section{一些使用技巧}\label{header-n57}
+
+\begin{itemize}
+    \item \textbf{快捷键}: 常用的快捷键有: "Ctrl + /" 注释 ; "Ctrl + Enter" 编译; "Ctrl + B" 加粗; "Ctrl + Space" 引用.
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.85\textwidth]{Guidepics/20210415185428.png}
+              \caption{所有快捷键一览}
+          \end{figure}
+    \item \textbf{双向查找}: 选中文段后按图中键, 可以实现 PDF 文段与 TeX 源代码的双向查找.
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.85\textwidth]{Guidepics/20210415184949.png}
+              \caption{在 PDF 与源代码间双向查找}
+          \end{figure}
+\end{itemize}
+
+至此本份 Overleaf 指南已经结束, 希望对大家有所帮助, 同样也欢迎大家补充.
+% \includepdf[pages=-]{figure/OverleafGuide.pdf}
 \end{document}
