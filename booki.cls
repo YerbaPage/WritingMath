@@ -14,7 +14,8 @@
 \RequirePackage{listings}% 代码段
 \RequirePackage{algorithm2e, algorithmic}    % 算法代码
 \RequirePackage{tikz, pgfplots}  % 绘图
-\RequirePackage{fontspec, url, array}
+% \RequirePackage{fontspec, url, array}
+\RequirePackage{url, array}
 \RequirePackage{txfonts} % Times 风格（数学）字体
 \RequirePackage{indentfirst}
 \RequirePackage{blindtext}
@@ -26,7 +27,7 @@
 \RequirePackage[calcwidth, nobottomtitles, explicit, newparttoc, indentafter]{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage[many]{tcolorbox}% 定义文本框盒子
-\RequirePackage{fontawesome}
+% \RequirePackage{fontawesome}
 \graphicspath{{figures/}} % 图片文件路径
 %%% ---- 定义页边距 ----- %%%
 \geometry{a4paper,centering,scale=0.75,marginparwidth=2cm}
@@ -67,6 +68,7 @@
 \renewcommand\footnoterule{\vspace*{-3pt}\hrule width 0.3\columnwidth height 0.75pt
 \vspace*{2.6pt}}
 
+% 封面
 \RequirePackage{makeidx}
 \makeindex
 \RequirePackage{verbatim}
@@ -96,7 +98,7 @@
   \thispagestyle{empty}
   \let\cleardoublepage\clearpage
 }
-%%% ---- 设置listings/lstlistings----- %%%
+
 \newcommand{\key}[1]{\textcolor{blue}{#1}}
 \newtcolorbox{titledBox}[1]{%
   tikznode boxed title,
@@ -110,9 +112,18 @@
   boxrule=.5pt,
   left=5pt, right=5pt, top=15pt, bottom=10pt,
   boxsep=5pt,
-  title={\textbf{#1}},
-  halign=left
+  title={\heiti{#1}},
+  halign=left,
+  fontupper=\heiti
 }
+
+% \newcommand{\contents}
+% {
+% %\pagestyle{empty}
+% \tableofcontents       % 目录
+% \cleardoublepage
+% \pagestyle{fancy}
+% }
 
 %%% ---- 设置 PDF 文件信息----- %%%
 \RequirePackage[colorlinks,
