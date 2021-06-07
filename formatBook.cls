@@ -61,18 +61,31 @@
 % \@namedef{subjclassname@2020}{\textup{\kaishu{MR (2020) 主题分类}}}
 % \makeatother
 
-% % 可供选择的主题分类(组合相关):
-% \subjclass[2020]{
-% % from https://www.impan.pl/wydawnictwa/dla-autorow/msc2020.pdf
-% % 05A05, % Permutations, words, matrices
-% % 05A10, % Factorials, binomial coefficients, combinatorial functions [See also 11B65, 33Cxx]
-% % 05A15, % Exact enumeration problems, generating functions [See also 33Cxx, 33Dxx]
-% % 05A16, % Asymptotic enumeration
-% % 05A17, % Combinatorial aspects of partitions of integers [See also 11P81, 11P82, 11P83]
-% % 05A18, % Partitions of sets
-% 05A19 % Combinatorial identities, bijective combinatorics
-% % 05A20, % Combinatorial inequalities
-% % 05A30, % q-calculus and related topics [See also 33Dxx]
-% % 05A40, % Umbral calculus
-% % 05A99, % None of the above, but in this section
-% }
+\RequirePackage{verbatim}
+\makeatletter
+\newcommand{\maketitlepage}{
+\vspace*{5cm}
+\begin{flushright}
+    \begin{minipage}[h][8cm][c]{\textwidth}
+        \raggedleft
+        {
+         \fontsize{25pt}{0pt}\selectfont \textcolor{blue}{Writing Math Paper}\\[0.8ex]}
+        {
+        \heiti \fontsize{36pt}{0pt}{}\textcolor{blue}{数学论文写作}\par}
+    \textcolor{blue}{\rule[-1ex]{\textwidth}{3pt}}
+    \end{minipage}
+    \hspace{5cm}
+    \begin{minipage}[h][3cm][c]{\textwidth}
+        \raggedleft\linespread{1.25}\selectfont
+        {
+        \heiti \zihao{-2} {东林\ 石雨凌}\par}
+        {
+           \zihao{-2}\textcolor{blue}{} \par}
+        {
+        \heiti \zihao{-2}{\today}\par}
+    \end{minipage}
+\end{flushright}
+  \thispagestyle{empty}
+  \let\cleardoublepage\clearpage
+}
+
