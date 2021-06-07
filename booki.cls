@@ -29,235 +29,235 @@
 \RequirePackage{fontawesome}
 \graphicspath{{figures/}} % 图片文件路径
 %%% ---- 定义页边距 ----- %%%
-\geometry{top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm,headheight=1.75cm,headsep=14pt,footskip=0.79cm}
+\geometry{a4paper,centering,scale=0.72,marginparwidth=2cm}
+% \geometry{top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm,headheight=1.75cm,headsep=14pt,footskip=0.79cm}
 %%% ---- 定义字体 ----- %%%
 
 \renewcommand{\normalsize}{\zihao{-4}}% 正常字号
 %%% ---- 定义标题和段落样式 ----- %%%
-\setlength{\parindent}{2em}%段落缩进两字符
+% \setlength{\parindent}{2em}%段落缩进两字符
 \renewcommand*{\baselinestretch}{1.35}
 % 定义22磅行距
-\setlength{\parskip}{0em}%段落间的距离
+% \setlength{\parskip}{1em}%段落间的距离
 %\renewcommand{\baselinestretch}{1.53})
-\renewcommand{\textfraction}{0.15}%页面文本的最小比例(0.2)
-\renewcommand{\topfraction}{0.85}%页顶浮动对象高/页高的最大值(0.7)
-\renewcommand{\bottomfraction}{0.50}%页底浮动对象高/页高的最大值(0.3)
-\renewcommand{\floatpagefraction}{0.80}%浮动页由浮动对象占用的最小比例(0.5
+% \renewcommand{\textfraction}{0.15}%页面文本的最小比例(0.2)
+% \renewcommand{\topfraction}{0.85}%页顶浮动对象高/页高的最大值(0.7)
+% \renewcommand{\bottomfraction}{0.50}%页底浮动对象高/页高的最大值(0.3)
+% \renewcommand{\floatpagefraction}{0.80}%浮动页由浮动对象占用的最小比例(0.5
 % 设置各个标题样式
 %% 中文名称
-\renewcommand{\contentsname}{目录}
-\renewcommand{\listfigurename}{插图目录}
-\renewcommand{\listtablename}{表格目录}
-\renewcommand{\appendixname}{附录}
-\renewcommand{\indexname}{索引}
-\renewcommand{\algorithmcfname}{算法}
-\renewcommand{\lstlistingname}{代码}
-\renewcommand\figurename{图}
-\renewcommand\tablename{表}
-\renewcommand{\lstlistlistingname}{\lstlistingname 列表}
+% \renewcommand{\contentsname}{目录}
+% \renewcommand{\listfigurename}{插图目录}
+% \renewcommand{\listtablename}{表格目录}
+% \renewcommand{\appendixname}{附录}
+% \renewcommand{\indexname}{索引}
+% \renewcommand{\algorithmcfname}{算法}
+% \renewcommand{\lstlistingname}{代码}
+% \renewcommand\figurename{图}
+% \renewcommand\tablename{表}
+% \renewcommand{\lstlistlistingname}{\lstlistingname 列表}
 %%% ---- 图表标题设置 ----- %%%
-\RequirePackage[labelsep=quad]{caption}     % 序号之后空一格写标题
-\RequirePackage{subfig}
-\DeclareCaptionFont{heiti}{\heiti}
-\DeclareCaptionFont{z5}{\zihao{5}}
+% \RequirePackage[labelsep=quad]{caption}     % 序号之后空一格写标题
+% \RequirePackage{subfig}
+% \DeclareCaptionFont{heiti}{\heiti}
+% \DeclareCaptionFont{z5}{\zihao{5}}
 %图表标题段落前后距离
-\captionsetup[table]{labelfont={heiti,z5},textfont={heiti,z5},belowskip={12pt-\intextsep},aboveskip=12pt}
-\captionsetup[figure]{labelfont={heiti,z5},textfont={heiti,z5},belowskip={12pt-\intextsep},aboveskip=12pt}
-\captionsetup[lstlisting]{labelfont={heiti,z5},textfont={heiti,z5},belowskip=3pt,aboveskip=10pt}
+% \captionsetup[table]{labelfont={heiti,z5},textfont={heiti,z5},belowskip={12pt-\intextsep},aboveskip=12pt}
+% \captionsetup[figure]{labelfont={heiti,z5},textfont={heiti,z5},belowskip={12pt-\intextsep},aboveskip=12pt}
+% \captionsetup[lstlisting]{labelfont={heiti,z5},textfont={heiti,z5},belowskip=3pt,aboveskip=10pt}
 %\setlength{\abovecaptionskip}{0pt}
 %\setlength{\belowcaptionskip}{0pt}
 %浮动对象和文字间的距离
-\setlength{\floatsep}{6pt \@plus4\p@\@minus\p@}
-\setlength{\intextsep}{6pt \@plus4\p@\@minus\tw@\p@}
-\setlength{\textfloatsep}{12pt }
-\setlength{\@fptop}{0bp \@plus1.0fil}
-\setlength{\@fpsep}{0pt \@plus2.0fil}
-\setlength{\@fpbot}{0bp \@plus1.0fil}
-% 设置图片的 caption 格式
-\renewcommand{\thetable}{\arabic{chapter}--\arabic{table}}
+% \setlength{\floatsep}{6pt \@plus4\p@\@minus\p@}
+% \setlength{\intextsep}{6pt \@plus4\p@\@minus\tw@\p@}
+% \setlength{\textfloatsep}{12pt }
+% \setlength{\@fptop}{0bp \@plus1.0fil}
+% \setlength{\@fpsep}{0pt \@plus2.0fil}
+% \setlength{\@fpbot}{0bp \@plus1.0fil}
+% % 设置图片的 caption 格式
+% \renewcommand{\thetable}{\arabic{chapter}--\arabic{table}}
 %\renewcommand{\theequation}{\arabic{chapter}--\arabic{equation}}%公式编号格式
-% 使用tabularx创建占满宽度的表格
-\newcolumntype{L}{X}
-\newcolumntype{C}{>{\centering \arraybackslash}X}
-\newcolumntype{R}{>{\raggedleft \arraybackslash}X}
+% % 使用tabularx创建占满宽度的表格
+% \newcolumntype{L}{X}
+% \newcolumntype{C}{>{\centering \arraybackslash}X}
+% \newcolumntype{R}{>{\raggedleft \arraybackslash}X}
 
-\newlength{\BoxTtlwidth}	% 用来计算各种盒子所需宽度
+% \newlength{\BoxTtlwidth}	% 用来计算各种盒子所需宽度
 % 各章标题排版: \MakeChapBox{编号}{标题}, 除附录外, 各章用中文数字显示. 以参数是否为大写拉丁字母来判定是否在附录 (烂招)
-\newcommand{\MakeChapBox}[2]{%
-    \centering
-	\settowidth{\BoxTtlwidth}{第\chinese{chapter}章} % 计算宽度
-	\begin{tcolorbox}[ % 设置 tcolorbox
-		enhanced jigsaw,
-		skin = bicolor,
-		frame engine = path,
-		sharp corners = all,
-		width = 0.9\textwidth,
-		top = 4mm, bottom = 4mm,
-		sidebyside,
-		frame hidden,
-		boxrule = 0mm,
-		lefthand width = \BoxTtlwidth,
-		colupper = white,
-		colback = gray!80,
-		colbacklower = gray!10,
-		sidebyside align=center,
-		halign=center]
-		%
-        第\chinese{chapter}章
-		\tcblower
-		#2
-	\end{tcolorbox}%
-}
+% \newcommand{\MakeChapBox}[2]{%
+%     \centering
+% 	\settowidth{\BoxTtlwidth}{第\chinese{chapter}章} % 计算宽度
+% 	\begin{tcolorbox}[ % 设置 tcolorbox
+% 		enhanced jigsaw,
+% 		skin = bicolor,
+% 		frame engine = path,
+% 		sharp corners = all,
+% 		width = 0.9\textwidth,
+% 		top = 4mm, bottom = 4mm,
+% 		sidebyside,
+% 		frame hidden,
+% 		boxrule = 0mm,
+% 		lefthand width = \BoxTtlwidth,
+% 		colupper = white,
+% 		colback = gray!80,
+% 		colbacklower = gray!10,
+% 		sidebyside align=center,
+% 		halign=center]
+% 		%
+%         第\chinese{chapter}章
+% 		\tcblower
+% 		#2
+% 	\end{tcolorbox}%
+% }
 
-% 无编号标题排版: \MakeChapBox{标题}
-\newcommand{\MakeChapBoxSingle}[1]{%
-	\begin{tcolorbox}[
-		enhanced,
-		width = 0.7\textwidth,
-		sharp corners = all,
-		top = 4mm, bottom = 4mm,
-		frame hidden,
-		boxrule = 0mm,
-		colback = gray!10,
-		halign=center]
-		#1
-	\end{tcolorbox}
-}
+% % 无编号标题排版: \MakeChapBox{标题}
+% \newcommand{\MakeChapBoxSingle}[1]{%
+% 	\begin{tcolorbox}[
+% 		enhanced,
+% 		width = 0.7\textwidth,
+% 		sharp corners = all,
+% 		top = 4mm, bottom = 4mm,
+% 		frame hidden,
+% 		boxrule = 0mm,
+% 		colback = gray!10,
+% 		halign=center]
+% 		#1
+% 	\end{tcolorbox}
+% }
 
 % 各节标题排版: \MakeSectBox{文字}, 问题: 不允许断行
-\newtcbox{\MakeSectBox}{
-	enhanced,
-	arc = 0pt, outer arc = 0pt,
-	before skip = 0pt, after skip = 0.4em, left skip = 0pt, right skip = 0pt,
-	top = 0pt, left = 0pt, right = 0pt, bottom = 1.5mm,
-	sharp corners = all,
-	valign=bottom,
-	colback = white,
-	colframe = white,
-	boxsep = 0pt, leftrule = 0pt, rightrule=0pt, toprule=0pt, bottomrule = 0pt,
-	overlay = { \draw[line width=1pt] (interior.south west) -- (interior.south east); }
-}
+% \newtcbox{\MakeSectBox}{
+% 	enhanced,
+% 	arc = 0pt, outer arc = 0pt,
+% 	before skip = 0pt, after skip = 0em, left skip = 0pt, right skip = 0pt,
+% 	top = 0pt, left = 0pt, right = 0pt, bottom = 0mm,
+% 	sharp corners = all,
+% 	valign=bottom,
+% 	colback = white,
+% 	colframe = white,
+% 	boxsep = 0pt, leftrule = 0pt, rightrule=0pt, toprule=0pt, bottomrule = 0pt,
+% 	overlay = { \draw[line width=1pt] (interior.south west) -- (interior.south east); }
+% }
 
 % 用 titlesec 设置各章标题
-\titleformat{name=\chapter}
-	{\filright\sffamily\heiti\Huge}	% Format
-	{}	% Label
-	{0mm}	% Sep
-	{\MakeChapBox{\thechapter}{#1}}	% Before-code
-	[]	% After-code
-\titlespacing*{name=\chapter}	% 设置间隔
-	{1pc}{*4}{1em}	% {left}{before-sep}{after-sep}
+% \titleformat{name=\chapter}
+% 	{\filright\sffamily\heiti\Huge}	% Format
+% 	{}	% Label
+% 	{0mm}	% Sep
+% 	{\MakeChapBox{\thechapter}{#1}}	% Before-code
+% 	[]	% After-code
+% \titlespacing*{name=\chapter}	% 设置间隔
+% 	{1pc}{*4}{1em}	% {left}{before-sep}{after-sep}
 
-\titleformat{name=\chapter, numberless}
-	{\filcenter\sffamily\heiti\Huge}	% Format
-	{}	% Label
-	{0mm}	% Sep
-	{\MakeChapBoxSingle{#1}}	% Before-code
-	[]	% After-code
-\titlespacing*{name=\chapter, numberless}	% 设置间隔
-	{1pc}{*4}{1em}	% {left}{before-sep}{after-sep}
+% \titleformat{name=\chapter, numberless}
+% 	{\filcenter\sffamily\heiti\Huge}	% Format
+% 	{}	% Label
+% 	{0mm}	% Sep
+% 	{\MakeChapBoxSingle{#1}}	% Before-code
+% 	[]	% After-code
+% \titlespacing*{name=\chapter, numberless}	% 设置间隔
+% 	{1pc}{*4}{1em}	% {left}{before-sep}{after-sep}
 
-\titleformat{name=\section} % 各节标题
-	{\filleft\sffamily\heiti\zihao{3}}
-	{}
-	{0mm}
-	{ \settowidth{\BoxTtlwidth}{#1}  % 首先计算宽度
-		\ifdim \BoxTtlwidth < \textwidth % 一般情形下调用 \MakeSectBox
-			\MakeSectBox{\huge \thesection \hspace{0.7em} \Large #1}\vskip-18pt%
-		\else % 万一标题过长则不用 \MakeSectBox (烂招)
-			\huge \underline{\thesection} \hspace{0.7em} \Large #1%
-		\fi %
-	}
-	[]
+% \titleformat{name=\section} % 各节标题
+% 	{\filright\sffamily\heiti\zihao{3}}
+% 	{}
+% 	{0mm}
+% 	{ \settowidth{\BoxTtlwidth}{#1}  % 首先计算宽度
+% 		\ifdim \BoxTtlwidth < \textwidth % 一般情形下调用 \MakeSectBox
+% 			\MakeSectBox{\huge \thesection \hspace{0.3em} \Large #1}%
+% 		\else % 万一标题过长则不用 \MakeSectBox (烂招)
+% 			\huge \underline{\thesection} \hspace{0.3em} \Large #1%
+% 		\fi %
+% 	}
 
-\titleformat{name=\section, numberless}	% 各节标题: 无编号情形
-	{\filleft\sffamily\heiti\zihao{3}}
-	{}
-	{0mm}
-	{ \settowidth{\BoxTtlwidth}{#1}  % 首先计算宽度
-		\ifdim \BoxTtlwidth < \textwidth % 一般情形下调用 \MakeSectBox
-			\MakeSectBox{\Large #1}\vskip-18pt%
-		\else % 万一标题过长则不用 \MakeSectBox (烂招)
-			\Large #1 %
-		\fi %
-	}
-	[]
+% \titleformat{name=\section, numberless}	% 各节标题: 无编号情形
+% 	{\filleft\sffamily\heiti\zihao{3}}
+% 	{}
+% 	{0mm}
+% 	{ \settowidth{\BoxTtlwidth}{#1}  % 首先计算宽度
+% 		\ifdim \BoxTtlwidth < \textwidth % 一般情形下调用 \MakeSectBox
+% 			\MakeSectBox{\Large #1}\vskip-18pt%
+% 		\else % 万一标题过长则不用 \MakeSectBox (烂招)
+% 			\Large #1 %
+% 		\fi %
+% 	}
+% 	[]
 	
-\titlespacing*{name=\section}	% 设置间隔
-	{1pc}{*1.3}{*1}    % {left}{before-sep}{after-sep}
+% \titlespacing*{name=\section}	% 设置间隔
+% 	{1pc}{*1.3}{*1}    % {left}{before-sep}{after-sep}
 
-\titleformat{name=\subsection} % 各子节标题, 采取 runin 形式较美观
-	[runin]
-	{\filleft\sffamily\heiti\zihao{-3}}
-	{\Large\thesubsection}	% Label
-	{3mm}	% Sep
-	{#1}	% Before-code
-	[]		% After-code
+% \titleformat{name=\subsection} % 各子节标题, 采取 runin 形式较美观
+% % 	[runin]
+% 	{\filleft\sffamily\heiti\zihao{-3}}
+% 	{\Large\thesubsection}	% Label
+% 	{3mm}	% Sep
+% 	{#1}	% Before-code
+% 	[]		% After-code
 
-\titleformat{name=\subsection, numberless}
-	[runin]
-	{\filleft\sffamily\heiti\zihao{-3}}
-	{}	% Label
-	{0mm}	% Sep
-	{#1}	% Before-code
-	[]		% After-code
-\titlespacing*{name=\subsection}	% 设置间隔
-	{0pt}{*1}{1em}    % {left}{before-sep}{after-sep}
+% \titleformat{name=\subsection, numberless}
+% 	[runin]
+% 	{\filleft\sffamily\heiti\zihao{-3}}
+% 	{}	% Label
+% 	{0mm}	% Sep
+% 	{#1}	% Before-code
+% 	[]		% After-code
+% \titlespacing*{name=\subsection}	% 设置间隔
+% 	{0pt}{*1}{1em}    % {left}{before-sep}{after-sep}
 
-\titleformat{name=\subsubsection} % 次子节标题, 采取 runin 形式较美观
-	[runin]
-	{\filleft\sffamily\heiti\zihao{4}}
-	{\thesubsubsection}	% Label
-	{3mm}	% Sep
-	{#1}	% Before-code
-	[]		% After-code
+% \titleformat{name=\subsubsection} % 次子节标题, 采取 runin 形式较美观
+% 	[runin]
+% 	{\filleft\sffamily\heiti\zihao{4}}
+% 	{\thesubsubsection}	% Label
+% 	{3mm}	% Sep
+% 	{#1}	% Before-code
+% 	[]		% After-code
 	
-\titleformat{name=\subsubsection, numberless}
-	[runin]
-	{\filleft\sffamily\heiti\zihao{4}}
-	{}	% Label
-	{0mm}	% Sep
-	{#1}	% Before-code
-	[]		% After-code
+% \titleformat{name=\subsubsection, numberless}
+% 	[runin]
+% 	{\filleft\sffamily\heiti\zihao{4}}
+% 	{}	% Label
+% 	{0mm}	% Sep
+% 	{#1}	% Before-code
+% 	[]		% After-code
 
-\titlespacing*{name=\subsubsection}	% 设置间隔
-	{0pt}{*1}{1em}    % {left}{before-sep}{after-sep}
+% \titlespacing*{name=\subsubsection}	% 设置间隔
+% 	{0pt}{*1}{1em}    % {left}{before-sep}{after-sep}
 
-\renewcommand{\thepart}{\chinese{part}}	% 部分的标题编号汉化
-\titleformat{name=\part}[display]	% 各部分标题
-	{\filcenter\sffamily\heiti\Huge}	% Format
-	{第{\thepart}部分}	% Label
-	{1.5em}	% Sep
-	{#1}	% Before-code
-	[]	% After-code
+% \renewcommand{\thepart}{\chinese{part}}	% 部分的标题编号汉化
+% \titleformat{name=\part}[display]	% 各部分标题
+% 	{\filcenter\sffamily\heiti\Huge}	% Format
+% 	{第{\thepart}部分}	% Label
+% 	{1.5em}	% Sep
+% 	{#1}	% Before-code
+% 	[]	% After-code
 
-\titlecontents{chapter}
-	[0pt]
-	{\addvspace{1pc}\zihao{-4}\heiti}
-	{\contentsmargin{0pt}\large{\thecontentslabel} \quad}
-	{\contentsmargin{0pt}\large}
-	{\titlerule*[.7pc]{.}\contentspage}
+% \titlecontents{chapter}
+% 	[0pt]
+% 	{\addvspace{1pc}\zihao{-4}\heiti}
+% 	{\contentsmargin{0pt}\large{\thecontentslabel} \quad}
+% 	{\contentsmargin{0pt}\large}
+% 	{\titlerule*[.7pc]{.}\contentspage}
 
-\titlecontents{section}
-	[1.5em]
-	{\zihao{-4}\heiti}
-	{\thecontentslabel\quad}
-	{\thecontentslabel}
-	{\titlerule*[.7pc]{.}\contentspage}
+% \titlecontents{section}
+% 	[1.5em]
+% 	{\zihao{-4}\heiti}
+% 	{\thecontentslabel\quad}
+% 	{\thecontentslabel}
+% 	{\titlerule*[.7pc]{.}\contentspage}
 
-\titlecontents{subsection}
-	[3.9em]
-	{\zihao{-4}\heiti}
-	{\thecontentslabel\quad}
-	{\ (\thecontentspage)}
-	{\titlerule*[.7pc]{.}\contentspage}
+% \titlecontents{subsection}
+% 	[3.9em]
+% 	{\zihao{-4}\heiti}
+% 	{\thecontentslabel\quad}
+% 	{\ (\thecontentspage)}
+% 	{\titlerule*[.7pc]{.}\contentspage}
 
-\titlecontents{part}
-	[0cm]
-	{\addvspace{1pc}\zihao{-4}\heiti}
-	{\contentsmargin{0pt}\large{\thecontentslabel}\quad}
-	{\large}
-	{\titlerule*[.7pc]{.}\contentspage}
+% \titlecontents{part}
+% 	[0cm]
+% 	{\addvspace{1pc}\zihao{-4}\heiti}
+% 	{\contentsmargin{0pt}\large{\thecontentslabel}\quad}
+% 	{\large}
+% 	{\titlerule*[.7pc]{.}\contentspage}
 
 % 将 figure 和 table 索引加入目录: 使用 etoolbox 提供的 patching
 \pretocmd{\listoffigures}{%
@@ -299,15 +299,15 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}}
 %%% ---- 列表样式----- %%%
-\RequirePackage{enumerate, enumitem}
-%\setlist{noitemsep}
-\setlist{nosep}
-\setlist*{leftmargin=*}  % 列表和段落头对齐
-\setlist[1]{labelindent=2em} %一级列表缩进
-\setlist[2]{labelindent=0em} %二级列表缩进
-% 设置item条目的索引符号
-\renewcommand{\labelitemi}{\ensuremath{\blacktriangleright}}
-\renewcommand{\labelitemii}{\ensuremath{\rhd}}
+% \RequirePackage{enumerate, enumitem}
+% %\setlist{noitemsep}
+% \setlist{nosep}
+% \setlist*{leftmargin=*}  % 列表和段落头对齐
+% \setlist[1]{labelindent=2em} %一级列表缩进
+% \setlist[2]{labelindent=0em} %二级列表缩进
+% % 设置item条目的索引符号
+% \renewcommand{\labelitemi}{\ensuremath{\blacktriangleright}}
+% \renewcommand{\labelitemii}{\ensuremath{\rhd}}
 %\setitemize{leftmargin=0em,itemsep=0em,partopsep=0em,parsep=0em,topsep=0em,itemindent=30em}
 %\setenumerate{leftmargin=0em,itemsep=0em,partopsep=0em,parsep=0em,topsep=0em,itemindent=30em}
 %%% ---- 修改脚注----- %%%
@@ -353,12 +353,12 @@
 \RequirePackage{makeidx}
 \makeindex
 %% ----清除公式上下间距----- %%%
-\AtBeginDocument{
-	\setlength{\abovedisplayskip}{2pt}
-	\setlength{\belowdisplayskip}{2pt}
-	\setlength{\abovedisplayshortskip}{0pt}
-	\setlength{\belowdisplayshortskip}{0pt}
-}
+% \AtBeginDocument{
+% 	\setlength{\abovedisplayskip}{2pt}
+% 	\setlength{\belowdisplayskip}{2pt}
+% 	\setlength{\abovedisplayshortskip}{0pt}
+% 	\setlength{\belowdisplayshortskip}{0pt}
+% }
 %%% ---- 封面 ----- %%%
 \RequirePackage{verbatim}
 \makeatletter
@@ -391,28 +391,28 @@
 \newcommand{\key}[1]{\textcolor{blue}{#1}}
 % 定义颜色
 % success
-\definecolor{colorSuccess}{HTML}{28a745}
-\definecolor{colorSuccessBorder}{HTML}{c3e6cb}
-\definecolor{colorSuccessBackground}{HTML}{d4edda}
-\definecolor{colorSuccessText}{HTML}{155724}
+% \definecolor{colorSuccess}{HTML}{28a745}
+% \definecolor{colorSuccessBorder}{HTML}{c3e6cb}
+% \definecolor{colorSuccessBackground}{HTML}{d4edda}
+% \definecolor{colorSuccessText}{HTML}{155724}
 
-% info
-\definecolor{colorInfo}{HTML}{17a2b8}
-\definecolor{colorInfoBorder}{HTML}{bee5eb}
-\definecolor{colorInfoBackground}{HTML}{d1ecf1}
-\definecolor{colorInfoText}{HTML}{0c5460}
+% % info
+% \definecolor{colorInfo}{HTML}{17a2b8}
+% \definecolor{colorInfoBorder}{HTML}{bee5eb}
+% \definecolor{colorInfoBackground}{HTML}{d1ecf1}
+% \definecolor{colorInfoText}{HTML}{0c5460}
 
-% danger
-\definecolor{colorDanger}{HTML}{dc3545}
-\definecolor{colorDangerBorder}{HTML}{f5c6cb}
-\definecolor{colorDangerBackground}{HTML}{f8d7da}
-\definecolor{colorDangerText}{HTML}{721c24}
+% % danger
+% \definecolor{colorDanger}{HTML}{dc3545}
+% \definecolor{colorDangerBorder}{HTML}{f5c6cb}
+% \definecolor{colorDangerBackground}{HTML}{f8d7da}
+% \definecolor{colorDangerText}{HTML}{721c24}
 
-% warning
-\definecolor{colorWarning}{HTML}{ffc107}
-\definecolor{colorWarningBorder}{HTML}{ffeeba}
-\definecolor{colorWarningBackground}{HTML}{fff3cd}
-\definecolor{colorWarningText}{HTML}{856404}
+% % warning
+% \definecolor{colorWarning}{HTML}{ffc107}
+% \definecolor{colorWarningBorder}{HTML}{ffeeba}
+% \definecolor{colorWarningBackground}{HTML}{fff3cd}
+% \definecolor{colorWarningText}{HTML}{856404}
 %% 带标题的文本框
 \newtcolorbox{titledBox}[1]{%
   tikznode boxed title,
@@ -424,7 +424,7 @@
   colbacktitle=white,coltitle=black,
   boxed title style={size=normal,colframe=white,boxrule=0pt},
   boxrule=.5pt,
-  left=5pt, right=5pt, top=5pt, bottom=0pt,
+  left=5pt, right=5pt, top=15pt, bottom=5pt,
   boxsep=5pt,
   title={\heiti#1},
   halign=left,
@@ -529,7 +529,7 @@
 \RequirePackage{url}
 % \RequirePackage[UTF8]{ctex}
 \RequirePackage{graphicx}
-\RequirePackage{appendix}
+% \RequirePackage{appendix}
 \RequirePackage{float}
 
 % \usepackage[style=gb7714-2015,url=false,doi=false]{biblatex}
