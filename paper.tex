@@ -2,6 +2,8 @@
 \documentclass{booki}
 \usepackage{amsthm}
 \newcommand{\XG}[1]{\textcolor{red}{#1}}
+\newcommand{\setParDis}{\setlength {\parskip} {0.3cm} }
+\newcommand{\setParDef}{\setlength {\parskip} {1em} }
 \addbibresource{references.bib}
 \begin{document}
 \title{数学学术论文写作}
@@ -9,7 +11,7 @@
 \maketitlepage
 % \maketitle
 \tableofcontents
-\setlength{\parskip}{1.5em}
+\setlength{\parskip}{1em}
 \newpage
 \chapter{引言}
 在大学阶段, 作为数学专业的学生, 我们不可避免会进行一系列的数学学术论文的写作, 可能是为了完成课程论文, 毕业论文, 也可能是跟随导师进行课外的学术研究. 笔者自身也只是大学本科生, 没有太多学术写作的经验. 为了写这本书(甚至只能说是一本小的指导手册), 笔者也阅读了许多教授, 数学家关于数学学术论文写作指导的书籍, 文章, 从中挑选整理了一些观点并结合了自身的写作经历.
@@ -30,25 +32,10 @@
             \item 写作后供大家检查使用的Checklist.
         \end{enumerate}
 \end{titledBox}
-
-% {
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.9\linewidth}{{\begin{enumerate}
-%             \item 写作前有助于构思的``构建雏形法”;
-%             \item 写作中整体结构与规范性上的注意事项,可供参考的细节表达建议;
-%             \item 写作后供大家检查使用的Checklist.
-%         \end{enumerate}}
-%         }}
-%     \ \\ \vspace{0.25cm} \  \\ 
-% \end{center}}
-%在本章中, 我们将介绍一种能够通过写作前的工作改善此问题的``构建雏形法'', 并进一步分享论文写作中整体结构与规范性上的注意事项, 给出一些可供参考的细节表达建议, 最后提供两个可供完成写作后检查使用的 Checklist.
-%
 \section{写作前: 构建雏形}
-\setlength{\parskip}{1em}
 \noindent \textit{According to this technique, one does not write the paper in linear order, and one also refrains from the temptation of writing the easiest or most straightforward portions first. \\ \ \\ 根据这种方法, 我们不会拘泥于以线性顺序书写论文, 而且还能经受住先写最容易或最直接的部分的诱惑. }
 \begin{flushright}
-    \cndash Terence Tao\footnote{陶哲轩(1975-), 华裔数学家, 菲尔茨奖获得者, 21岁获得普林斯顿大学博士学位,  24岁起在加利福尼亚大学洛杉矶分校担任正教授.}, \textit{Write a rapid prototype first\cite{TaoWrite2007}}
+    \cndash Terence Tao\footnote{陶哲轩(1975-), 菲尔茨奖获得者, 21岁Princeton博士毕业, 24岁起在UCLA担任教授.}, \textit{Write a rapid prototype first\cite{TaoWrite2007}}
 \end{flushright}
 \setlength{\parskip}{1.5em}
 
@@ -322,44 +309,45 @@
     \item {符号或者公式作为句子开头时加上前缀.} 例如{``}$x^{n}-a$有$n$个不同的零点. ''可以改成{``}多项式方程$x^{n}-a$有$n$个不同的零点''{.}
 \end{itemize}
 \section{写作后: 自我检查}
+%\setParDis
 所有写作都受益于修订. 因此, 在我们完成一篇论文后不要急着提交, 而是应该做到有效的自我检查. \textbf{试想我们提交了一篇充满小错误的论文初稿给指导老师, 那么指导老师根本没有精力去给我们的论文提出建设性的建议, 所有的精力都用来给我们指出这些小错误了.} \textbf{做到有效的自我检查, 不仅需要我们理解掌握基本的论文写作原则, 还需要我们有发现错误的能力以及纠正错误的技巧和勇气. }\par
 \textbf{我们可以将初稿搁置几天, 以便重新思考. }然后以不同的方式分析草稿, 快速阅读来检查句子是否流畅, 句子的长度是否合适, 公式和文本之间是否有良好的平衡, 论文看起来是否吸引人以及关键思想是否突出等等. 有时候耳朵比眼睛更有说服力. 当我们朗读我们的论文时, 如果感觉听上去怪怪的, 很有可能这一部分我们的遣词造句或是逻辑关系存在问题. \par
-{下面笔者将给大家两个Checklist\cite{TanChecklist}, 分别对应词句和公式细节, 供大家在自我检查时参考:}
+{笔者将在附录 \ref{Checklist 1} 与附录 \ref{Checklist 2} 给大家提供两个Checklist\cite{TanChecklist}, 分别对应词句和公式细节, 供大家在自我检查时参考.}
+%\newpage
+%\begin{center}
+%    \noindent\fbox{
+%        \parbox[c]{0.9\linewidth}{{$\square$ Can any words, phrases or sentences be deleted without loss of force or meaning?             \\
+%                $\square$ Can you replace any long, woolly words with short, pithy ones ?                               \\
+%                $\square$ Are sentences and paragraphs in the best order, or should they be reordered or restructured? \\
+%                $\square$ Are there any ambiguities or blatantly wrong words?                                          \\
+%                $\square$ Is there any unnecessary repetition?                                                      \\
+%                $\square$ Can you convert a sentence from the passive to the active voice?                             \\
+%                $\square$ Is the notation consistent? Can it be simplified or made more logical?             \\
+%               $\square$ Have quotations, references and numerical results been copied into the paper correctly?      \\
+%                $\square$ Is due reference made to the work of other authors?                                \\
+%                $\square$ Are all the cross-references and bibliographic citations correct?
+%               \\
+%                $\square$ Are there any words, punctuation symbols, or phrases missed?}
+%        }}
+%    \ \\ \vspace{0.25cm} \  \\ {Checklist 1: 词句细节}
+%\end{center}
 
-\begin{center}
-    \noindent\fbox{
-        \parbox{0.9\linewidth}{{$\square$ Can any words, phrases or sentences be deleted without loss of force or meaning?             \\
-                $\square$ Can you replace any long, woolly words with short, pithy ones ?                               \\
-                $\square$ Are sentences and paragraphs in the best order, or should they be reordered or restructured? \\
-                $\square$ Are there any ambiguities or blatantly wrong words?                                          \\
-                $\square$ Is there any unnecessary repetition?                                                      \\
-                $\square$ Can you convert a sentence from the passive to the active voice?                             \\
-                $\square$ Is the notation consistent? Can it be simplified or made more logical?             \\
-                $\square$ Have quotations, references and numerical results been copied into the paper correctly?      \\
-                $\square$ Is due reference made to the work of other authors?                                \\
-                $\square$ Are all the cross-references and bibliographic citations correct?
-                \\
-                $\square$ Are there any words, punctuation symbols, or phrases missed?}
-        }}
-    \ \\ \vspace{0.25cm} \  \\ {Checklist 1: 词句细节}
-\end{center}
-
-\begin{center}
-    \noindent\fbox{
-        \parbox{0.9\linewidth}{{
-                $\square$ Unmatched parentheses: $a=(b+c/2$.                                       \\
-                $\square$ O (capital Oh) for 0 (zero), l (lower case ell) for 1.                        \\
-                $\square$ Bad line breaks in mathematical equations.                                    \\
-                $\square$ Incorrectly formatted displayed equations (e.g. poor alignment in a multiline display). \\
-                $\square$ Change in meaning of words or mathematics resulting from copy editor's rewriting.       \\
-                $\square$ Missing mathematical symbols (e.g. $\eta \parallel Lx-b \parallel$ instead of $\eta = \parallel Lx-b \parallel$).                                                  \\
-                $\square$ Misplaced mathematical symbols or wrong kind: subscript should be superscript. \\
-                $\square$ Errors in numbers in tables.                                                  \\
-                $\square$ Incorrect listed numbers of citation, equations and results.}
-        }}
-    \ \\ \vspace{0.25cm} \  \\ {Checklist 2: 公式细节}
-\end{center}
-
+%\begin{center}
+%    \noindent\fbox{
+%        \parbox[c]{0.9\linewidth}{{
+%                $\square$ Unmatched parentheses: $a=(b+c/2$.                                       \\
+%                $\square$ O (capital Oh) for 0 (zero), l (lower case ell) for 1.                        \\
+%                $\square$ Bad line breaks in mathematical equations.                                    \\
+%                $\square$ Incorrectly formatted displayed equations (e.g. poor alignment in a multiline display). \\
+%                $\square$ Change in meaning of words or mathematics resulting from copy editor's rewriting.       \\
+%                $\square$ Missing mathematical symbols (e.g. $\eta \parallel Lx-b \parallel$ instead of $\eta = \parallel Lx-b \parallel$).                                                  \\
+%                $\square$ Misplaced mathematical symbols or wrong kind: subscript should be superscript. \\
+%                $\square$ Errors in numbers in tables.                                                  \\
+%                $\square$ Incorrect listed numbers of citation, %equations and results.}
+%        }}
+%    \ \\ \vspace{0.25cm} \  \\ {Checklist 2: 公式细节}
+%\end{center}
+%\setParDef
 \chapter{资料获取与协作工具}
 在导师带领下开展研究时(不论是面对课程论文还是毕业设计), 我们很容易碰到以下两种情况:
 \begin{enumerate}
@@ -570,6 +558,40 @@
 \addcontentsline{toc}{chapter}{参考文献}
 {\printbibliography[title = {参考文献}]}
 \appendix
+\chapter{Checklist 1}\label{Checklist 1}
+\begin{center}
+    \noindent\fbox{
+        \parbox[c]{0.9\linewidth}{{$\square$ Can any words, phrases or sentences be deleted without loss of force or meaning?             \\
+                $\square$ Can you replace any long, woolly words with short, pithy ones ?                               \\
+                $\square$ Are sentences and paragraphs in the best order, or should they be reordered or restructured? \\
+                $\square$ Are there any ambiguities or blatantly wrong words?                                          \\
+                $\square$ Is there any unnecessary repetition?                                                      \\
+                $\square$ Can you convert a sentence from the passive to the active voice?                             \\
+                $\square$ Is the notation consistent? Can it be simplified or made more logical?             \\
+                $\square$ Have quotations, references and numerical results been copied into the paper correctly?      \\
+                $\square$ Is due reference made to the work of other authors?                                \\
+                $\square$ Are all the cross-references and bibliographic citations correct?
+                \\
+                $\square$ Are there any words, punctuation symbols, or phrases missed?}
+        }}
+    \ \\ \vspace{0.25cm} \  \\ {词句细节}
+\end{center}
+\chapter{Checklist 2}\label{Checklist 2}
+\begin{center}
+    \noindent\fbox{
+        \parbox[c]{0.9\linewidth}{{
+                $\square$ Unmatched parentheses: $a=(b+c/2$.                                       \\
+                $\square$ O (capital Oh) for 0 (zero), l (lower case ell) for 1.                        \\
+                $\square$ Bad line breaks in mathematical equations.                                    \\
+                $\square$ Incorrectly formatted displayed equations (e.g. poor alignment in a multiline display). \\
+                $\square$ Change in meaning of words or mathematics resulting from copy editor's rewriting.       \\
+                $\square$ Missing mathematical symbols (e.g. $\eta \parallel Lx-b \parallel$ instead of $\eta = \parallel Lx-b \parallel$).                                                  \\
+                $\square$ Misplaced mathematical symbols or wrong kind: subscript should be superscript. \\
+                $\square$ Errors in numbers in tables.                                                  \\
+                $\square$ Incorrect listed numbers of citation, equations and results.}
+        }}
+    \ \\ \vspace{0.25cm} \  \\ {公式细节}
+\end{center}
 \chapter{Overleaf 注册与使用指南}\label{overleafGuide}
 在这份注册与使用指南中, 我们将:
 
@@ -590,29 +612,26 @@
 % \end{enumerate}}
 %         }}
 % \end{center}}
-
+\newpage
 \section{注册}\label{header-n2}
 
 官网地址为: \url{https://www.overleaf.com/} (注: 使用邮箱注册时可能需要科学上网, 选择``使用 ORCID 注册''则可以不用科学上网)
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Guidepics/20210415183938.png}
+    \includegraphics[width=0.55\textwidth]{Guidepics/20210415183938.png}
     \caption{注册界面}
 \end{figure}
 
 \section{功能免费升级}\label{header-n5}
-
-由于免费账号最多只能添加一位合作者, \textbf{团队总人数 \( \geq3\)时},
-大家可以通过以下步骤免费升级:
-
+免费账号最多只能添加一位合作者, 但大家可以通过以下步骤免费升级:
 \begin{enumerate}
     \item 打开 \url{https://www.overleaf.com/user/bonus}
           可以看到只要邀请一位好友即可增加一个名额, 满足三人合作;
           \begin{figure}[H]
               \centering
-              \includegraphics[width=0.8\textwidth]{Guidepics/20210415183943.png}
-              % \caption{image-20210415164134399}
+              \includegraphics[width=0.55\textwidth]{Guidepics/20210415183943.png}
+              \caption{邀请页面}
           \end{figure}
     \item 项目创建者邀请合作从邀请链接\footnote{从 \url{https://www.overleaf.com/user/bonus} 可以获取}注册即可.
 \end{enumerate}
@@ -680,7 +699,6 @@
     \caption{分享项目给好友一起合作}
 \end{figure}
 
-\newpage
 输入合作者注册使用的邮箱即可邀请合作(若好友未注册则会自动发送注册邮件). 此外, 还可以修改合作者的权限为可以编辑或者只读.
 
 \begin{figure}[H]
@@ -688,7 +706,7 @@
     \includegraphics[width=0.9\textwidth]{Guidepics/20210415184012.png}
     \caption{通过邮箱邀请合作者并设置权限}
 \end{figure}
-
+\newpage
 \section{其他辅助功能}\label{header-n42}
 在网页右上角的辅助功能菜单中还有很多实用的功能, 下面我们将简要介绍.
 \begin{figure}[H]
@@ -705,7 +723,6 @@
               \includegraphics[width=0.9\textwidth]{Guidepics/20210415184018.png}
               \caption{批注模式}
           \end{figure}
-          \newpage
     \item \textbf{History}: 可以追踪曾经的版本和修改记录 (免费版有历史记录限制, 可以通过~\ref{header-n5} 节中介绍的方法解锁),
 
           \begin{figure}[H]
