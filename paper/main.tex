@@ -1,0 +1,307 @@
+\documentclass{CombPaper}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{\small{第二类 Stirling 数两种表达式中的系数}}
+\lhead{\small{\thepage}}
+\rhead{}
+
+\begin{document}
+\title{\Large{第二类 Stirling 数两种表达式中的系数}}
+
+\author{东林 \quad 石雨凌}
+\address{上海财经大学数学学院,  上海 200433}
+\keywords{Bernoulli 数,  Stirling 数}
+
+% \email{email1@sufe.edu.cn,  email2@sufe.edu.cn}
+
+\maketitle
+
+\begin{abstract}
+	我们比较了第二类 Stirling 数作为 $m$ 的多项式两种表达式
+	$$
+S(m+n,  m)=\beta_{n} m+\left(\beta_{n}^{(2)}+H_{n} \beta_{n}\right) m^{2}+\left(\beta_{n}^{(3)}+H_{n} \beta_{n}^{(2)}+H_{n,  2} \beta_{n}\right) m^{3}+\cdots
+$$
+和
+$$
+S(m+n,  n)=\beta_{n} m+\left(\frac{1}{2}(-1)^{n-1} B_{n-1}+\frac{1}{2} \sum_{i=1}^{n-1} \beta_{i} \beta_{n-i}\right) m^{2}+C m^{3}+\cdots
+$$
+中 $m^4$ 和 $m^5$ 的系数,  并给出等式.其中 $\beta_{i}=B_{i} / i$,  $B_{i}$ 是第 $i$ 个 Bernoulli 数,  而 $H_{n}=1+1 / 2+$ $\cdots+1 / n$.
+\end{abstract}
+
+\section{引言}
+Nörlund 多项式 $B_{n}^{(z)}$ 定义为
+\begin{equation}\label{norlund_def}
+\sum_{n=0}^{\infty} B_{n}^{(z)} \frac{x^{n}}{n !}=\left(\frac{x}{e^{x}-1}\right)^{z}, 
+\end{equation}
+当 $z$ 为非负整数时 $B_{n}^{(z)}$ 称为 $z$ 阶 Bernoulli 数, 并记 $B_{n}^{(1)}=B_{n}$.
+
+有许多恒等式包含 Bernoulli 数的二项式卷积,  如著名的 Euler 恒等式
+$$
+\sum_{i=2}^{n-2}\left(\begin{array}{l}
+n \\
+i
+\end{array}\right) B_{i} B_{n-i}=-(n+1) B_{n},  n\geq4.
+$$ Euler 恒等式的证明可以利用 $$
+b(x)^{2}=(1-x) b(x)-x b^{\prime}(x) 
+$$ 简洁地得到,  其中 $b(x)=x /\left(e^{x}-1\right)$. 通过类似的方法还可以证明其他含有 Bernoulli 数的恒等式如\cite{dilcher1996sums, huang1999bernoulli}.
+
+一般调和数 $H_{n,  j}$ 定义为 
+\begin{equation}\label{harmonic_gen}
+H_{n,  j}=\sum_{1 \leq k_{1}<k_{2}<\cdots<k_{j} \leq n} \frac{1}{k_{1} k_{2} \cdots k_{j}}, 
+\end{equation}
+并令 $H_{n}=H_{n,  1}$.
+
+记
+\begin{equation}\label{7}
+\beta_{n}^{(j)}=\frac{1}{j !} \sum_{i_{1}+i_{2}+\cdots+i_{j}=n}\left(\begin{array}{c}
+n \\
+i_{1},  \ldots,  i_{j}
+\end{array}\right) \beta_{i_{1}} \cdots \beta_{i_{j}}, 
+\end{equation}
+其中 $\beta_{n} = (-1)^{n} B_{n} / n$,  且 $i_{1},  i_{2},  \ldots,  i_{j}>0$. 
+
+
+Miki 在\cite{miki1978relation}中利用 $p-$ 级数证明了另一有趣的含有 Bernoulli 数的恒等式
+\begin{equation}\label{miki}
+\sum_{i=2}^{n-2} \beta_{i} \beta_{n-i}-\sum_{i=2}^{n-2}\left(\begin{array}{l}
+n \\
+i
+\end{array}\right) \beta_{i} \beta_{n-i}=2 H_{n} \beta_{n},
+\end{equation}
+此式也被称为 Miki 恒等式. Gessel 在 \cite{gessel2005miki} 中借助第二类 Stirling 数 $S(n,  k)$ 的两种表示给出了更为简洁的证明, 而 Miki 恒等式还具有更加一般化的形式如 \cite{dilcher2016general, fu2009symmetric} 等.
+
+第二类 Stirling 数 $S(n,  k)$ 可以由一般生成函数定义为
+\begin{equation}\label{stirl_ordgen}
+\sum_{n=0}^{\infty} S(n,  k) x^{n}=\frac{x^{k}}{(1-x)(1-2 x) \cdots(1-k x)}, 
+\end{equation}
+也可由以下指数生成函数定义为
+\begin{equation}\label{stirl_gen}
+\sum_{n=0}^{\infty} S(n,  k) \frac{x^{n}}{n !}=\frac{\left(e^{x}-1\right)^{k}}{k !}.
+\end{equation}
+
+我们借助 Taylor 展开, 比较了第二类 Stirling 数作为 $m$ 的多项式两种表达式
+$$
+S(m+n,  m)=\beta_{n} m+\left(\beta_{n}^{(2)}+H_{n} \beta_{n}\right) m^{2}+\left(\beta_{n}^{(3)}+H_{n} \beta_{n}^{(2)}+H_{n,  2} \beta_{n}\right) m^{3}+\cdots
+$$
+和
+$$
+S(m+n,  n)=\beta_{n} m+\left(\frac{1}{2}(-1)^{n-1} B_{n-1}+\frac{1}{2} \sum_{i=1}^{n-1} \beta_{i} \beta_{n-i}\right) m^{2}+C m^{3}+\cdots
+$$
+中 $m^4$ 和 $m^5$ 的系数,  并给出等式.
+
+本文的结构如下, 我们在第~\ref{sec2} 节中给出四条引理, 并由此在第~\ref{sec3} 节中证明 Miki 恒等式, 最后在第~\ref{sec4} 节分别对两种表达式中 $m^4$ 和 $m^5$ 系数进行比较, 验证 Miki 恒等式.
+
+% \begin{enumerate}
+% 	\item 研究背景介绍：阅读主要参考文献\cite{gessel2005miki}以及:
+% 	\begin{itemize}
+% 	\item 阅读该文章中引用到的\cite{miki1978relation}和\cite{dilcher1996sums},  并在引言中对文中的方法和主要结果做简要的介绍.
+% 	\item 阅读引用到\cite{gessel2005miki}的文章如\cite{fu2009symmetric}和\cite{dilcher2016general}.当然,  也鼓励自行阅读其它文献.
+% 	\end{itemize}
+% 	\item 声明本文的主要创新点(可以以性质或定理的形式给出)
+% 	\item 最后介绍本文的结构(可以梳理引理和定理)
+% \end{enumerate}
+
+\section{引理}\label{sec2}
+在本节中, 我们将给出四条引理, 并依次进行证明.
+\begin{lemma}\label{lemma1}
+$$S(m+n,  m)=\left(\begin{array}{c}m+n \\ n\end{array}\right) B_{n}^{(-m)}, $$ 其中记号 $\left(\begin{array}{c}m+n \\ n\end{array}\right)$ 表示 $m+n$ 元集 $n$ 元子集的个数.
+% $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n(n-1) \cdots(n-k+1)}{k(k-1) \cdots 1}$
+\end{lemma}
+\begin{proof}
+由~\eqref{norlund_def} 和~\eqref{stirl_gen} 有 $$
+\sum_{n=0}^{\infty} B_{n}^{(-m)} \frac{x^{n}}{n !}=\left(\frac{e^{x}-1}{x}\right)^{m}=\sum_{n=0}^{\infty} S(m+n,  m) \frac{m ! n !}{(m+n) !} \frac{x^{n}}{n !}.
+$$
+% \mnote{检查公式后面的标点}
+\end{proof}
+\begin{lemma}\label{lemma2}
+$$\left(\begin{array}{c}m+n \\ n\end{array}\right)=\sum_{j=0}^{n} H_{n,  j} m^{j}.$$
+\end{lemma}
+\begin{proof}
+由~\eqref{harmonic_gen} 有
+$$
+\sum_{j=0}^{n} H_{n,  j} m^{j}=\left(1+\frac{m}{1}\right)\left(1+\frac{m}{2}\right) \cdots\left(1+\frac{m}{n}\right)=\frac{m+n}{n} \cdot \frac{m+n-1}{n-1} \cdots \frac{m+1}{1}=\left(\begin{array}{c}
+m+n \\
+n
+\end{array}\right).
+$$
+\end{proof}
+
+\begin{lemma}\label{lemma3}
+对 $n>0$, 
+$$B_{n}^{(-m)}=\sum_{j=1}^{n} \beta_{n}^{(j)} m^{j}.$$
+\end{lemma}
+\begin{proof}
+由~\eqref{norlund_def} 有
+$$
+\sum_{n=0}^{\infty} B_{n}^{(-m)} \frac{x^{n}}{n !}=\left(\frac{e^{x}-1}{x}\right)^{m}=\exp \left(m \log \left(\frac{e^{x}-1}{x}\right)\right)=\sum_{j=0}^{\infty} \frac{m^{j}}{j !}\left[\log \left(\frac{e^{x}-1}{x}\right)\right]^{j}.
+$$
+由于
+$$
+\frac{d}{d x} \log \left(\frac{e^{x}-1}{x}\right)=\frac{1}{x}\left(\frac{-x}{e^{-x}-1}-1\right)=\sum_{n=1}^{\infty}(-1)^{n} B_{n} \frac{x^{n-1}}{n !}, 
+$$
+有
+$$
+\log \left(\frac{e^{x}-1}{x}\right)=\sum_{n=1}^{\infty}(-1)^{n} \frac{B_{n}}{n} \frac{x^{n}}{n !}=\sum_{n=1}^{\infty} \beta_{n} \frac{x^{n}}{n !}, 
+$$
+因此
+$$
+\frac{1}{j !}\left[\log \left(\frac{e^{x}-1}{x}\right)\right]^{j}=\sum_{n=0}^{\infty} \beta_{n}^{(j)} \frac{x^{n}}{n !}.
+$$
+\end{proof}
+
+\begin{lemma}\label{lemma4}
+$$
+\sum_{n=0}^{\infty} S(m+n,  n) x^{n}=\exp \left[\sum_{k=1}^{\infty} \frac{x^{k}}{k} \sum_{j=0}^{k}(-1)^{k-j}\left(\begin{array}{c}
+k \\
+j
+\end{array}\right) \frac{m^{j+1}}{j+1} B_{k-j}\right]
+$$
+\end{lemma}
+\begin{proof}
+由~\eqref{stirl_ordgen} 有
+$$
+\sum_{n=0}^{\infty} S(m+n,  n) x^{n}=\frac{1}{(1-x)(1-2 x) \cdots(1-m x)}=\exp \left[\sum_{k=1}^{\infty}\left(1^{k}+\cdots+m^{k}\right) \frac{x^{k}}{k}\right], 
+$$
+利用 Taylor 展开有
+$$
+\begin{aligned}
+\sum_{k=0}^{\infty}\left(1^{k}+\cdots+m^{k}\right) \frac{x^{k}}{k !} &=e^{x}+\cdots+e^{m x} \\
+&=\frac{e^{(m+1) x}-e^{x}}{e^{x}-1}\\
+&=\frac{e^{m x}-1}{x} \frac{-x}{e^{-x}-1}, 
+\end{aligned}
+$$
+故由~\eqref{norlund_def} 得 $$
+1^{k}+\cdots+m^{k}=\sum_{j=0}^{k}(-1)^{k-j}\left(\begin{array}{c}
+k \\
+j
+\end{array}\right) \frac{m^{j+1}}{j+1} B_{k-j}.
+$$
+\end{proof}
+
+\section{ Miki 恒等式的证明}\label{sec3}
+在本节中, 我们将基于引理~\ref{lemma1}-\ref{lemma4} 对 Miki 恒等式~\eqref{miki} 进行证明.
+
+
+根据引理~\ref{lemma1}-\ref{lemma3} 整理得出
+\begin{equation}
+S(m+n, m)=\left(\begin{array}{c}
+m+n \\
+n
+\end{array}\right)B_{n}^{(-m)}=\sum_{j=0}^{n}H_{n, j}m^{j}\cdot \sum_{j=1}^{n}\beta_{n}^{j}m^{j}.
+\end{equation}
+将上式展开, 给出第二类 Stirling 数作为 $m$ 的多项式的表达式 
+\begin{equation}\label{1}
+S(m+n,  m)=\beta_{n} m+\left(\beta_{n}^{(2)}+H_{n} \beta_{n}\right) m^{2}+\left(\beta_{n}^{(3)}+H_{n} \beta_{n}^{(2)}+H_{n,  2} \beta_{n}\right) m^{3}+\cdots,  n>0.    
+\end{equation}\par
+根据引理~\ref{lemma4} , 将等式的右边 Taylor 展开, 可得
+\begin{equation}\label{2}
+\begin{aligned}
+S(m+n,  n)=& \beta_{n} m+\left(\frac{1}{2}(-1)^{n-1} B_{n-1}+\frac{1}{2} \sum_{i=1}^{n-1} \beta_{i} \beta_{n-i}\right) m^{2} \\
+&+\left(\frac{1}{6} \sum_{i+j+k=n} \beta_{i} \beta_{j} \beta_{k}+\frac{1}{2} \sum_{i=1}^{n-1}(-1)^{n-i-1} \beta_{i} B_{n-i-1}+\frac{1}{6}(-1)^{n}(n-1) B_{n-2}\right) m^{3}+\cdots.
+\end{aligned}
+\end{equation}\par
+对比以上两式中 $m^{2}$ 的系数, 可得等式
+\begin{equation}
+\beta_{n}^{(2)}+H_{n} \beta_{n}=\frac{1}{2}(-1)^{n-1} B_{n-1}+\frac{1}{2} \sum_{i=1}^{n-1} \beta_{i} \beta_{n-i},     
+\end{equation}
+注意到当$n$为大于2的偶数时, $B_{n-1}$为0, 所以上式可以化为
+\begin{equation}\label{3}
+    2 H_{n} \beta_{n}=\sum_{i=2}^{n-2} \beta_{i} \beta_{n-i}-\sum_{i=2}^{n-2}\left(\begin{array}{c}
+n \\
+i
+\end{array}\right) \beta_{i} \beta_{n-i}.
+\end{equation}\par
+式~\eqref{3} 证明了偶数情形下的 Miki 恒等式.对于奇数情形, 我们根据式~\eqref{1} 与式~\eqref{2} 中$m^{3}$的系数可得
+\begin{equation}
+    \begin{aligned}
+\beta_{n}^{(3)}+H_{n} \beta_{n}^{(2)}+H_{n,  2} \beta_{n}=& \frac{1}{6} \sum_{i+j+k=n} \beta_{i} \beta_{j} \beta_{k}+\frac{1}{2} \sum_{i=1}^{n-1}(-1)^{n-1} \\
+& \times \beta_{i} B_{n-i-1}+\frac{1}{6}(-1)^{n}(n-1) B_{n-2} .
+\end{aligned}
+\end{equation}\par
+因为在$n>3$的奇数情形下 Bernoulli 数为0, 所以综上可以得到 Miki 恒等式在$n\geq 4$时成立.
+\section{计算系数}\label{sec4}
+本节中, 我们将根据引理~\ref{lemma4} 计算 $m^{4}$ 与 $m^{5}$ 前的系数,并验证Miki恒等式.为方便计算, 我们记
+\begin{equation}
+A_{k}=\sum_{j=0}^{k}(-1)^{k-j}\left(\begin{array}{c}k \\ j\end{array}\right) \frac{m^{j+1}}{j+1} B_{k-j}.    
+\end{equation}\par
+由 Taylor 展开得
+\begin{equation}\label{5}
+\exp \sum_{k=1}^{\infty} \frac{A_{k}}{k} x^{k}=1+\sum_{k=1}^{\infty} \frac{A_{k}}{k} x^{k}+\frac{1}{2 !}\left(\sum_{k=1}^{\infty} \frac{A_{k}}{k} x^{k}\right)^{2}+\frac{1}{3 !}\left(\sum_{k=1}^{\infty} \frac{A_{k}}{k} x^{k}\right)^{3}+\cdots.
+\end{equation}
+\subsection{$m^{4}$前系数的计算}
+在求解$m^{4}$前系数时, 我们只需要看式~\eqref{5} 的前四项(不包含常数项).\par
+考虑第一项中$x^{n}$系数$\frac{A_{n}}{n}$, 其中$m^{4}$的系数为
+\begin{equation}
+\frac{1}{n}\left(\begin{array}{c}
+n \\
+3
+\end{array}\right) \frac{m^{4}}{4} B_{n-3}(-1)^{n-3}=\frac{(n-1)(n-2)}{24} B_{n-3}(-1)^{n-3}.
+\end{equation}\par
+同理考虑第二、三、四项中$x^{n}$的系数, 并依次计算出其中$m^{4}$的系数为:\par
+第二项
+\begin{equation}
+    \sum_{i+j=n} \frac{(-1)^{n-2}(j-1) \beta_{i} B_{j-2}}{6}+\frac{B_{i} B_{j-1}(-1)^{n-2}}{8};
+\end{equation}\par
+第三项
+\begin{equation}
+    \frac{3}{3 !} \sum_{i_{1}+i_{2}+i_{3}=n}(-1)^{i_{1}} \frac{B_{i_{1}}}{i_{1}}(-1)^{i_{2}} \frac{B_{i_{2}}}{i_{2}} \frac{(-1)^{i_{3}-1}}{i_{3}} \frac{i_{3}}{2} B_{i_{3}-1}=\frac{(-1)^{n-1}}{4} \sum_{i_{1}+i_{2}+i_{3}=n} \beta_{i_{1}} \beta_{i_{2}} B_{i_{3}-1};
+\end{equation}\par
+第四项
+\begin{equation}
+\frac{1}{24} \sum_{i_{1}+i_{2}+i_{3}+i_{4}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} \beta_{i_{4}}.
+\end{equation}\par
+综上可得 $m^{4}$ 前的系数表达式为
+\begin{equation}
+\begin{aligned}
+&\frac{(n-1)(n-2)}{24} B_{n-3}(-1)^{n-3}+\sum_{i+j=n} \frac{(-1)^{n-2}(j-1) \beta_{i} B_{j-2}}{6}+\frac{B_{i} B_{j-1}(-1)^{n-2}}{8}+\ldots \\
+&+\frac{(-1)^{n-1}}{4} \sum_{i_{1}+i_{2}+i_{3}=n} \beta_{i_{1}} \beta_{i_{2}} B_{i_{3}-1}+\frac{1}{24} \sum_{i_{1}+i_{2}+i_{3}+i_{4}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} \beta_{i_{4}}.
+\end{aligned}
+\end{equation}\par
+\subsection{$m^{5}$前系数的计算}
+求解 $m^{5}$ 前系数时, 我们需要看式~\eqref{5} 的前五项(不包含常数项), 其余过程与 $m^{4}$ 系数的计算相同, 可依次得到第一、二、三、四、五项中 $x^{n}$ 项前 $m^{5}$ 的系数为:\par
+第一项
+\begin{equation}
+\frac{(n-1)(n-2)(n-3)}{120}(-1)^{n-4} B_{n-4};
+\end{equation}\par
+第二项
+\begin{equation}
+\left.\sum_{i=1}^{n-1} \frac{(-1)^{n-3}}{24}(n-i-1)(n-i-2) B_{i} B_{n-i-3}+\frac{(-1)^{n-3}}{12}(n-i-1) B_{i-1} B_{n-i-2}\right);
+\end{equation}\par
+第三项
+\begin{equation}
+\frac{1}{12} \sum_{2 \leq i_{1}+i_{2}<n}(-1)^{n-2}\left(n-i_{1}-i_{2}-1\right) \beta_{i_{1}} \beta_{i_{2}} B_{n-i_{1}-i_{2}-2}+\frac{1}{8} \sum_{2 \leq i_{1}+i_{2}<n}(-1)^{n-2} B_{i_{1}-1} B_{i_{2}-1} \beta_{n-i_{1}-i_{2}};
+\end{equation}\par
+第四项
+\begin{equation}
+\frac{1}{12} \sum_{i_{1}+i_{2}+i_{3}+i_{4}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} B_{i_{4}-1}(-1)^{n-1};
+\end{equation}\par
+第五项
+\begin{equation}
+\frac{1}{5 !} \sum_{i_{1}+i_{2}+i_{3}+i_{4}+i_{6}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} \beta_{i_{4}} \beta_{i_{5}}.
+\end{equation}\par
+综上可得 $m^{5}$ 前的系数表达式为
+\begin{equation}
+\begin{aligned}
+&\frac{(n-1)(n-2)(n-3)}{120}(-1)^{n-4} B_{n-4} \\
+&+\sum_{i=1}^{n-1} \frac{(-1)^{n-3}}{24}(n-i-1)(n-i-2) B_{i} B_{n-i-3} \\
+&+\sum_{i=1}^{n-1} \frac{(-1)^{n-3}}{12}(n-i-1) B_{i-1} B_{n-i-2} \\
+&+\frac{1}{12} \sum_{2 \leq i_{1}+i_{2}<n}(-1)^{n-2}\left(n-i_{1}-i_{2}-1\right) \beta_{i_{1}} \beta_{i_{2}} B_{n-i_{1}-i_{2}-2} \\
+&+\frac{1}{8} \sum_{2 \leq i_{1}+i_{2}<n}(-1)^{n-2} B_{i_{1}-1} B_{i_{2}-1} \beta_{n-i_{1}-i_{2}} \\
+&+\frac{1}{12} \sum_{i_{1}+i_{2}+i_{3}+i_{4}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} B_{i_{4}-1}(-1)^{n-1} \\
+&+\frac{1}{5 !} \sum_{i_{1}+i_{2}+i_{3}+i_{4}+i_{5}=n} \beta_{i_{1}} \beta_{i_{2}} \beta_{i_{3}} \beta_{i_{4}} \beta_{i_{5}}.
+\end{aligned}
+\end{equation}
+\subsection{验证Miki恒等式}
+根据式~\eqref{1} 我们可以得到$m^{4}$与$m^{5}$前的系数分别为:\par
+\begin{itemize}
+    \item $m^{4}$: $\beta_{n}^{(4)}+\mathrm{H}_{n} \beta_{n}^{(3)}+H_{n, 2} \beta_{n}^{(2)}+H_{n, 3} \beta_{n};$
+    \item $m^{5}$: $\beta_{n}^{(5)}+H_{n} \beta_{n}^{(4)}+H_{n, 2} \beta_{n}^{(3)}+H_{n, 3} \beta_{n}^{(2)}+H_{n, 4} \beta_{n}.$
+\end{itemize}\par
+再将式~\eqref{harmonic_gen}以及式~\eqref{7}代入化简,可以验证结果与前两小节的计算结果相同,Miki恒等式成立.
+\section*{致谢}
+我们希望再次感谢付梅老师在这一学期对我们极富耐心的指导, 使我们的学术知识和学术素养都得到了进一步的提升.
+\bibliographystyle{abbrv}
+% \bibliographystyle{}
+\bibliography{reference}
+
+\end{document}
